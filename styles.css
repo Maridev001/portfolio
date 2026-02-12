@@ -380,6 +380,95 @@ section h2::after {
     font-weight: bold;
 }
 
+/* Services Section */
+#services {
+    background-color: var(--gray-light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background-color: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(179, 141, 126, 0.2);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    color: var(--gray-dark);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: var(--gray-medium);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.service-list {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.service-list li {
+    padding: 0.5rem 0;
+    color: var(--gray-medium);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.service-list li::before {
+    content: '→ ';
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.service-cta {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.service-cta:hover {
+    color: var(--dark-color);
+    transform: translateX(5px);
+}
+
 /* CV Section */
 #cv {
     background-color: var(--white);
@@ -427,6 +516,13 @@ section h2::after {
     opacity: 0.9;
 }
 
+.cv-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
 .cv-button {
     display: inline-block;
     background-color: var(--white);
@@ -434,12 +530,48 @@ section h2::after {
     padding: 0.8rem 2rem;
     border-radius: 30px;
     font-weight: bold;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
 .cv-card:hover .cv-button {
     background-color: var(--light-color);
-    transform: translateX(5px);
+}
+
+.cv-download-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 2px solid var(--white);
+    transition: all 0.3s ease;
+}
+
+.cv-download-btn:hover {
+    background-color: var(--white);
+    color: var(--dark-color);
+}
+
+/* Cal.com Button */
+.cal-button {
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    background-color: var(--white);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.cal-button:hover {
+    transform: translateY(-2px);
+    background-color: var(--light-color);
 }
 
 /* Contact Section */
@@ -734,37 +866,20 @@ section h2::after {
 footer {
     background-color: var(--dark-color);
     color: var(--white);
-    padding: 2rem;
-    text-align: center;
+    padding: 1.5rem 2rem;
 }
 
-.social-links {
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.social-links a {
-    color: var(--white);
-    font-size: 1.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.social-icon svg {
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--light-color);
-    transform: translateY(-3px);
-}
-
-.social-links a:hover svg {
-    fill: var(--light-color);
+.footer-copy {
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 /* Project Modal */
@@ -1023,6 +1138,16 @@ footer {
 
     .certifications-grid {
         grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
     }
 }
 

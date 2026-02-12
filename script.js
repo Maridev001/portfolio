@@ -52,11 +52,32 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form submission
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+// Form submission via Web3Forms
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    alert('Thank you for your message! I will respond soon.');
-    e.target.reset();
+    const form = e.target;
+    const submitBtn = form.querySelector('.submit-button');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form)
+        });
+        const data = await response.json();
+        if (data.success) {
+            alert('Thank you for your message! I will respond soon.');
+            form.reset();
+        } else {
+            alert('Something went wrong. Please try again or email me directly.');
+        }
+    } catch (error) {
+        alert('Something went wrong. Please try again or email me directly.');
+    }
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
 });
 
 // Project Modals
@@ -75,7 +96,7 @@ const projectData = {
         technologies: ['Web3', 'Blockchain', 'Smart Contracts', 'DeFi'],
         impact: 'Successfully launched platform with significant user adoption in the blockchain fundraising space',
         links: [
-            { text: 'Visit Fund Raisin', url: 'https://fundraisin.app' }
+            { text: 'Visit Fund Raisin', url: 'https://www.fundraisin.app' }
         ]
     },
     redbridge: {
