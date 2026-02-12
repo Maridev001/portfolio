@@ -380,8 +380,9 @@ section h2::after {
     font-weight: bold;
 }
 
-/* Services Section */
+/* Services Section (hidden for now) */
 #services {
+    display: none;
     background-color: var(--gray-light);
 }
 
