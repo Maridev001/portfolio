@@ -13,7 +13,7 @@ const translations = {
         // Hero
         'hero-subtitle': 'Project Manager and Operations Consultant',
         'hero-description': "I help early-stage startups and small teams run more smoothly — bringing structure to day-to-day operations, clarity to workflows, and consistency to how things get done.\n\nWith a background in UX, product ownership, and project management, I work alongside founders and team leads as an embedded operational partner.",
-        'hero-cta': 'Book a Discovery Call',
+        'hero-cta': 'Book a Video Call',
 
         // Trust strip
         'trust-item1': '5+ years in startup environments',
@@ -130,7 +130,7 @@ const translations = {
         'service3-item3': 'Operational leadership',
         'service3-item4': 'Ongoing iteration & improvement',
         'service1-cta': 'Explore Support →',
-        'service2-cta': 'Book a Discovery Call →',
+        'service2-cta': 'Book a Video Call →',
         'service3-cta': 'Discuss Partnership →',
 
         // Process
@@ -144,7 +144,7 @@ const translations = {
         'process-step3-desc': 'I work alongside your team — building structure, documenting processes, and coordinating across priorities.',
         'process-step4-title': 'Ongoing Support',
         'process-step4-desc': 'We iterate as the team grows. Operations improve. Chaos shrinks.',
-        'process-cta-btn': 'Book a Discovery Call',
+        'process-cta-btn': 'Book a Video Call',
 
         // Values
         'values-title': 'Values & Approach',
@@ -165,7 +165,7 @@ const translations = {
         // Final CTA
         'cta-final-title': 'Need operational clarity for your startup?',
         'cta-final-desc': "Let's find out how I can help your team run with less friction and more focus.",
-        'cta-final-btn': 'Book a Discovery Call',
+        'cta-final-btn': 'Book a Video Call',
 
         // Nav
         'nav-process': 'Process',

@@ -217,8 +217,91 @@ document.addEventListener('keydown', (e) => {
         closeModal();
         closeCertModal();
         closeCVModal();
+        closeServiceModal();
+        closePMIModal();
     }
 });
+
+// PMI Modal
+function openPMIModal() {
+    const modal = document.getElementById('pmi-modal-overlay');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closePMIModal() {
+    const modal = document.getElementById('pmi-modal-overlay');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Service Modals
+const serviceData = {
+    service1: {
+        title: 'Operational Coordination Support',
+        description: 'Light-touch coordination for teams that need structure without the overhead. I step in to organize task flow, facilitate syncs, and keep things from slipping.',
+        items: [
+            'Sprint & task tracking',
+            'Team sync facilitation',
+            'Communication flow setup',
+            'Light documentation'
+        ],
+        cta: { text: 'Explore Support →', url: '#contact', external: false }
+    },
+    service2: {
+        title: 'Startup Operations Management',
+        description: 'Full-cycle operational support for growing teams. I design workflows, build documentation, and coordinate across people and priorities so your team can focus on building.',
+        items: [
+            'Workflow design & documentation',
+            'Cross-team coordination',
+            'Process rollout & adoption',
+            'KPI tracking & reporting'
+        ],
+        cta: { text: 'Book a Video Call →', url: 'https://cal.com/mari-reddev', external: true }
+    },
+    service3: {
+        title: 'Fractional Operations Partner',
+        description: 'An ongoing embedded partner for founders who need operational leadership without a full-time hire. Strategy, structure, and continuity — for the long haul.',
+        items: [
+            'Strategic process design',
+            'Team enablement & alignment',
+            'Operational leadership',
+            'Ongoing iteration & improvement'
+        ],
+        cta: { text: 'Discuss Partnership →', url: '#contact', external: false }
+    }
+};
+
+function openServiceModal(serviceId) {
+    const modal = document.getElementById('service-modal-overlay');
+    const modalBody = document.getElementById('service-modal-body');
+    const service = serviceData[serviceId];
+    if (!service) return;
+
+    modalBody.innerHTML = `
+        <h2>${service.title}</h2>
+        <p class="modal-description">${service.description}</p>
+        <div class="modal-section">
+            <h3>What's included</h3>
+            <ul class="responsibilities-list">
+                ${service.items.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        </div>
+        <div class="modal-section">
+            <a href="${service.cta.url}" ${service.cta.external ? 'target="_blank" rel="noopener noreferrer"' : ''} class="modal-link" onclick="closeServiceModal()">
+                ${service.cta.text}
+            </a>
+        </div>
+    `;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeServiceModal() {
+    const modal = document.getElementById('service-modal-overlay');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
 
 // Certificate Modal Functions
 const certFiles = {
