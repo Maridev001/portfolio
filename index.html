@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marianna Álvarez - Product Manager</title>
+    <title>Marianna Álvarez — Project manager and Operations Consultant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>if(localStorage.getItem('darkMode')==='true')document.body.classList.add('dark-mode');</script>
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">Marianna Álvarez</div>
+            <a href="#home" class="logo">Marianna <span>Álvarez</span></a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="nav-home">Home</a></li>
+                <li><a href="#services" data-i18n="nav-services">Services</a></li>
+                <li><a href="#process" data-i18n="nav-process">Process</a></li>
+                <li><a href="#experience" data-i18n="nav-experience">Experience</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
             </ul>
+            <div class="nav-controls">
+            <a href="https://cal.com/mari-reddev" target="_blank" class="nav-meeting-btn" data-i18n="footer-meeting">Schedule a Meeting →</a>
+            <button class="lang-toggle" id="langToggle" aria-label="Change language">EN</button>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                </svg>
+            </button>
+            </div>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
@@ -33,62 +44,126 @@
         <div class="hero-content">
             <img src="Foto profesional.jpg" alt="Marianna Álvarez" class="profile-img">
             <h1>Marianna Álvarez</h1>
-            <p class="subtitle">Product & Project Manager | CAPM, Google PM | Architect</p>
-            <p>Leading innovative product development with a focus on web3 and user experience. Specialized in agile management of multidisciplinary teams and launching products with measurable impact. Background in Architecture brings unique spatial and design thinking to product development.</p>
-            <a href="#contact" class="cta-button">Let's talk about your project</a>
+            <p class="subtitle" data-i18n="hero-subtitle">Project Manager and Operations Consultant</p>
+            <p data-i18n="hero-description">I help founders and small teams build structure, coordinate across people, and keep operations running smoothly — so you can focus on building.</p>
+            <a href="https://cal.com/mari-reddev" target="_blank" class="cta-button" data-i18n="hero-cta">Book a Discovery Call</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p class="section-description">Product & Project Manager with Architecture background, specialized in digital products and web3</p>
-        <div class="about-content fade-in">
-            <div class="about-text">
-                <p>Certified Product & Project Manager with experience developing innovative products in the web3 ecosystem and emerging technologies. Currently leading product initiatives at red·dev, where I manage multidisciplinary teams to create solutions that generate real impact.</p>
-                <p>My unique background combines Architecture with product management and UX specialization, bringing spatial thinking and design principles to product development. This allows me to create products that are not only technically viable but also beautifully designed and centered on user needs. I have worked from conceptualization to successful launch of complex products.</p>
-                <p>CAPM (PMI) and Google Project Management certified, I apply agile methodologies like Scrum alongside traditional frameworks when necessary, ensuring flexibility and structure in every project.</p>
+    <!-- Services Section -->
+    <section id="services">
+        <h2 data-i18n="services-title">Support Packages</h2>
+        <p class="section-description" data-i18n="services-description">Three ways to work together — pick what fits your team's current stage.</p>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <!-- clipboard-check: checklist -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5h6A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                    </svg>
+                </div>
+                <h3 data-i18n="service1-title">Operational Coordination Support</h3>
+                <p data-i18n="service1-desc">Light-touch coordination for teams that need structure without the overhead. I step in to organize task flow, facilitate syncs, and keep things from slipping.</p>
+                <ul class="service-list">
+                    <li data-i18n="service1-item1">Sprint &amp; task tracking</li>
+                    <li data-i18n="service1-item2">Team sync facilitation</li>
+                    <li data-i18n="service1-item3">Communication flow setup</li>
+                    <li data-i18n="service1-item4">Light documentation</li>
+                </ul>
+                <a href="#contact" class="service-cta" data-i18n="service1-cta">Explore Support</a>
             </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <span class="stat-number">4+</span>
-                    <span class="stat-label">Years in Tech</span>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <!-- diagram-3: interconnected nodes -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                    </svg>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">PM Certifications</span>
+                <h3 data-i18n="service2-title">Startup Operations Management</h3>
+                <p data-i18n="service2-desc">Full-cycle operational support for growing teams. I design workflows, build documentation, and coordinate across people and priorities so your team can focus on building.</p>
+                <ul class="service-list">
+                    <li data-i18n="service2-item1">Workflow design &amp; documentation</li>
+                    <li data-i18n="service2-item2">Cross-team coordination</li>
+                    <li data-i18n="service2-item3">Process rollout &amp; adoption</li>
+                    <li data-i18n="service2-item4">KPI tracking &amp; reporting</li>
+                </ul>
+                <a href="https://cal.com/mari-reddev" target="_blank" class="service-cta" data-i18n="service2-cta">Book a Discovery Call</a>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <!-- link-45deg: partnership / long-term bond -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                    </svg>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">Web3</span>
-                    <span class="stat-label">Specialization</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">UX+PM</span>
-                    <span class="stat-label">Hybrid Profile</span>
-                </div>
+                <h3 data-i18n="service3-title">Fractional Operations Partner</h3>
+                <p data-i18n="service3-desc">An ongoing embedded partner for founders who need operational leadership without a full-time hire. Strategy, structure, and continuity — for the long haul.</p>
+                <ul class="service-list">
+                    <li data-i18n="service3-item1">Strategic process design</li>
+                    <li data-i18n="service3-item2">Team enablement &amp; alignment</li>
+                    <li data-i18n="service3-item3">Operational leadership</li>
+                    <li data-i18n="service3-item4">Ongoing iteration &amp; improvement</li>
+                </ul>
+                <a href="#contact" class="service-cta" data-i18n="service3-cta">Discuss Partnership</a>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <p class="section-description">A selection of projects demonstrating my experience and capabilities</p>
-        <div class="projects-grid">
+    <!-- How We Work Together -->
+    <section id="process">
+        <h2 data-i18n="process-title">How We Work Together</h2>
+        <p class="section-description" data-i18n="process-description">Simple and structured. No complicated onboarding — just a clear path from first call to operational clarity.</p>
+        <div class="process-steps">
+            <div class="process-step fade-in">
+                <div class="step-number">01</div>
+                <h3 data-i18n="process-step1-title">Discovery Call</h3>
+                <p data-i18n="process-step1-desc">We talk about where things stand, what's creating friction, and what structure would actually help your team.</p>
+            </div>
+            <div class="process-step fade-in">
+                <div class="step-number">02</div>
+                <h3 data-i18n="process-step2-title">Operational Assessment</h3>
+                <p data-i18n="process-step2-desc">I map your workflows, communication patterns, and task ownership to find the gaps and the quick wins.</p>
+            </div>
+            <div class="process-step fade-in">
+                <div class="step-number">03</div>
+                <h3 data-i18n="process-step3-title">Workflow &amp; Team Alignment</h3>
+                <p data-i18n="process-step3-desc">I work alongside your team — building structure, documenting processes, and coordinating across priorities.</p>
+            </div>
+            <div class="process-step fade-in">
+                <div class="step-number">04</div>
+                <h3 data-i18n="process-step4-title">Ongoing Support</h3>
+                <p data-i18n="process-step4-desc">We iterate as the team grows. Operations improve. Chaos shrinks.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="https://cal.com/mari-reddev" target="_blank" class="section-cta-btn" data-i18n="process-cta-btn">Book a Discovery Call</a>
+        </div>
+    </section>
+
+    <!-- Experience / Case Studies -->
+    <section id="experience">
+        <h2 data-i18n="experience-title">Case Studies</h2>
+        <p class="section-description" data-i18n="experience-description">Two projects. One startup. Real coordination challenges — and what it took to keep things moving.</p>
+        <div class="experience-grid">
             <div class="project-card fade-in">
                 <div class="project-image">
                     <img src="FundRaisin Logo.png" alt="Fund Raisin Logo" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="project-content">
                     <h3>Fund Raisin</h3>
-                    <p>Product Manager leading web3 platform for fund management and fundraising. Coordinating multidisciplinary teams, developing product roadmap, and successful launch with measurable results in the blockchain ecosystem.</p>
+                    <p data-i18n="project-fr-desc">Embedded product and operations coordination for a web3 fundraising platform. Structured sprint cycles, aligned stakeholders across design, development and marketing, and kept progress moving from roadmap to launch.</p>
                     <div class="project-tags">
-                        <span class="tag">Web3</span>
-                        <span class="tag">Fundraising</span>
-                        <span class="tag">Team Leadership</span>
-                        <span class="tag">Product Launch</span>
+                        <span class="tag" data-i18n="tag-web3">Web3</span>
+                        <span class="tag" data-i18n="tag-fundraising">Launch Coordination</span>
+                        <span class="tag" data-i18n="tag-leadership">Cross-team Alignment</span>
+                        <span class="tag" data-i18n="tag-launch">Roadmap Management</span>
                     </div>
-                    <a href="#" class="project-link" onclick="openModal('fundraisin'); return false;">View details →</a>
+                    <a href="#" class="project-link" onclick="openModal('fundraisin'); return false;" data-i18n="view-details">View details →</a>
                 </div>
             </div>
 
@@ -98,264 +173,176 @@
                 </div>
                 <div class="project-content">
                     <h3>Redbridge</h3>
-                    <p>Project Manager for bridge technology solution. Coordination between development teams, task management, and administrative oversight ensuring smooth project execution and timely delivery.</p>
+                    <p data-i18n="project-rb-desc">Operational coordination for a blockchain bridge product with distributed development teams. Structured task ownership, maintained clear communication flows, and kept the project on track across the full lifecycle.</p>
                     <div class="project-tags">
-                        <span class="tag">Bridge Solution</span>
-                        <span class="tag">Team Coordination</span>
-                        <span class="tag">Task Management</span>
-                        <span class="tag">Project Oversight</span>
+                        <span class="tag" data-i18n="tag-bridge">Blockchain</span>
+                        <span class="tag" data-i18n="tag-coordination">Team Coordination</span>
+                        <span class="tag" data-i18n="tag-task">Task Management</span>
+                        <span class="tag" data-i18n="tag-oversight">Remote Teams</span>
                     </div>
-                    <a href="#" class="project-link" onclick="openModal('redbridge'); return false;">View details →</a>
+                    <a href="#" class="project-link" onclick="openModal('redbridge'); return false;" data-i18n="view-details">View details →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills & Competencies</h2>
-        <p class="section-description">A comprehensive set of skills to lead successful products</p>
-        <div class="skills-grid">
-            <div class="skill-category fade-in">
-                <h3>Certifications</h3>
-                <ul class="skill-list">
-                    <li>CAPM - PMI (valid until 2028)</li>
-                    <li>Google Project Management Certificate (2024)</li>
-                    <li>UX Design Essentials</li>
-                    <li>Web Responsive Design</li>
-                </ul>
-            </div>
-
-            <div class="skill-category fade-in">
-                <h3>Methodologies</h3>
-                <ul class="skill-list">
-                    <li>Agile & Scrum</li>
-                    <li>Waterfall</li>
-                    <li>Product Management Frameworks</li>
-                    <li>User-Centered Design</li>
-                </ul>
-            </div>
-
-            <div class="skill-category fade-in">
-                <h3>Tools</h3>
-                <ul class="skill-list">
-                    <li>Figma & Sketch</li>
-                    <li>Odoo</li>
-                    <li>Gantt Charts</li>
-                    <li>KPIs & Analytics</li>
-                    <li>Google Sheets</li>
-                </ul>
-            </div>
-
-            <div class="skill-category fade-in">
-                <h3>Soft Skills</h3>
-                <ul class="skill-list">
-                    <li>Team Leadership</li>
-                    <li>Stakeholder Communication</li>
-                    <li>Problem Solving</li>
-                    <li>Advanced English (C1-C2)</li>
-                    <li>Catalan (B2)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- CV Section -->
-    <section id="cv">
-        <h2>Resume / CV</h2>
-        <p class="section-description">View my complete professional profile</p>
-        <div class="cv-container fade-in">
-            <div class="cv-card" onclick="openCVModal()">
-                <div class="cv-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
-                        <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
-                    </svg>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2 data-i18n="testimonials-title">What People Say</h2>
+        <p class="section-description" data-i18n="testimonials-description">A few words from people I've worked alongside.</p>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-logo">
+                    <img src="Reddev Logo (Dark).png" alt="red.dev" class="company-logo-img">
                 </div>
-                <h3>View My Resume</h3>
-                <p>Complete professional experience and qualifications</p>
-                <div class="cv-buttons">
-                    <span class="cv-button">View Resume →</span>
-                    <a href="certificates/PM_Resume_2024.pdf" download class="cv-download-btn" onclick="event.stopPropagation()">Download CV ↓</a>
+                <p class="testimonial-quote">Mari has been instrumental in maintaining operational structure across our startup environment. Over several years, she helped coordinate workflows, support project execution, maintain team organization and improve operational visibility across moving priorities. Her ability to bring clarity and consistency to fast-moving environments has been incredibly valuable</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Kit Sturgeon</span>
+                    <span class="author-role">CEO of Reddev, INC</span>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-logo">
+                    <img src="zachrogers.png" alt="Zach Rogers" class="company-logo-img">
+                </div>
+                <p class="testimonial-quote">Mari has a unique ability to bring structure to chaos. Whether it's project coordination, creative workflows or strategic decisions, her ability to ask the right questions and identify areas for improvement has consistently helped me move projects forward with more clarity.</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Zach Rogers</span>
+                    <span class="author-role">Director of Photography</span>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-logo">
+                    <img src="navas technology.png" alt="Navas Technology" class="company-logo-img">
+                </div>
+                <p class="testimonial-quote">Mari has a strong ability to bring structure to uncertainty. She helped me rethink how I presented deliverables, pricing and project expectations for an international client, making the whole process feel more organized and sustainable.</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Rainer Navas</span>
+                    <span class="author-role">Founder of Navas Technology</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <p class="section-description">Professional credentials and recognized certifications</p>
-        <div class="certifications-grid">
-            <div class="cert-card fade-in" onclick="openCertModal('capm')">
-                <div class="cert-image">
-                    <img src="certificates/cert-capm.jpg" alt="CAPM Certification">
-                </div>
-                <div class="cert-info">
-                    <h3>CAPM</h3>
-                    <p>Project Management Institute</p>
-                    <span class="cert-year">Valid until 2028</span>
-                </div>
-            </div>
-
-            <div class="cert-card fade-in" onclick="openCertModal('google-pm')">
-                <div class="cert-image">
-                    <img src="certificates/cert-google-pm.jpg" alt="Google Project Management Certificate">
-                </div>
-                <div class="cert-info">
-                    <h3>Google Project Management</h3>
-                    <p>Google Career Certificates</p>
-                    <span class="cert-year">2024</span>
+    <!-- Values & Approach -->
+    <section id="values">
+        <h2 data-i18n="values-title">Values &amp; Approach</h2>
+        <p class="section-description" data-i18n="values-description">The principles that guide how I work with every team.</p>
+        <div class="values-accordion">
+            <div class="accordion-item">
+                <button class="accordion-trigger">
+                    <span data-i18n="value1-title">Clarity</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p data-i18n="value1-desc">Clear communication and documented workflows. No ambiguity — just a shared understanding of what needs to happen and why.</p>
                 </div>
             </div>
-
-            <div class="cert-card fade-in" onclick="openCertModal('web-design')">
-                <div class="cert-image">
-                    <img src="certificates/cert-web.jpg" alt="Web Responsive Design Certificate">
-                </div>
-                <div class="cert-info">
-                    <h3>Web Responsive Design</h3>
-                    <p>Professional Certification</p>
-                    <span class="cert-year">2024</span>
+            <div class="accordion-item">
+                <button class="accordion-trigger">
+                    <span data-i18n="value2-title">Communication</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p data-i18n="value2-desc">Bridging technical and non-technical. Keeping everyone on the same page, even across distributed teams.</p>
                 </div>
             </div>
-
-            <div class="cert-card fade-in" onclick="openCertModal('ux-design')">
-                <div class="cert-image">
-                    <img src="certificates/cert-ux.jpg" alt="UX Design Certificate">
+            <div class="accordion-item">
+                <button class="accordion-trigger">
+                    <span data-i18n="value4-title">Sustainable Workflows</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p data-i18n="value4-desc">Systems that actually get used. Not just documented and forgotten — built to fit the team's reality.</p>
                 </div>
-                <div class="cert-info">
-                    <h3>UX Design Essentials</h3>
-                    <p>Professional Certification</p>
-                    <span class="cert-year">2021</span>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-trigger">
+                    <span data-i18n="value5-title">Long-Term Collaboration</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p data-i18n="value5-desc">I work alongside teams, not just deliver and leave. Good operations grow with the company.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Freelance Services</h2>
-        <p class="section-description">How I can help your business grow</p>
-        <div class="services-grid">
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.25-11.25v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 1.5 0zm0 4v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 1.5 0z"/>
-                        <path d="M6.5 7h3a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5z"/>
-                    </svg>
-                </div>
-                <h3>Product & Project Management</h3>
-                <p>End-to-end product strategy, roadmap development, sprint planning, and agile team coordination. From ideation to launch with measurable KPIs.</p>
-                <ul class="service-list">
-                    <li>Product Strategy & Roadmaps</li>
-                    <li>Sprint Planning & Scrum</li>
-                    <li>Team Coordination</li>
-                    <li>Product Launch</li>
-                </ul>
-                <a href="#contact" class="service-cta">Let's talk →</a>
-            </div>
 
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h15V1.5a.5.5 0 0 0-.5-.5h-13zM1 14.5a.5.5 0 0 0 .5.5H5V6H1v8.5zm5 .5h4V6H6v9zm5 0h3.5a.5.5 0 0 0 .5-.5V6h-4v9z"/>
-                    </svg>
-                </div>
-                <h3>UX Design & Research</h3>
-                <p>User-centered design approach combining research, wireframing, and prototyping to create intuitive digital experiences that drive engagement.</p>
-                <ul class="service-list">
-                    <li>User Research & Testing</li>
-                    <li>Wireframes & Prototypes</li>
-                    <li>UI/UX Audits</li>
-                    <li>Design Systems</li>
-                </ul>
-                <a href="#contact" class="service-cta">Let's talk →</a>
-            </div>
-
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                    </svg>
-                </div>
-                <h3>PM Consulting</h3>
-                <p>Strategic consulting to optimize your project management processes, improve team efficiency, and implement frameworks that deliver results.</p>
-                <ul class="service-list">
-                    <li>Process Optimization</li>
-                    <li>Stakeholder Management</li>
-                    <li>KPI Tracking & Analytics</li>
-                    <li>Team Training</li>
-                </ul>
-                <a href="#contact" class="service-cta">Let's talk →</a>
-            </div>
-        </div>
+    <!-- Final CTA -->
+    <section id="cta-final">
+        <h2 data-i18n="cta-final-title">Need operational clarity for your startup?</h2>
+        <p data-i18n="cta-final-desc">Let's find out how I can help your team run with less friction and more focus.</p>
+        <a href="https://cal.com/mari-reddev" target="_blank" class="cta-button" data-i18n="cta-final-btn">Book a Discovery Call</a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p class="section-description">Have a project in mind? Let's talk</p>
+        <h2 data-i18n="contact-title">Work With Me</h2>
+        <p class="section-description" data-i18n="contact-description">Takes 2 minutes. I'll follow up within 48 hours.</p>
         <div class="contact-container">
-            <div class="contact-info fade-in">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 23 23">
-                            <path d="M0 0h10.931v10.931H0z" fill="white"/>
-                            <path d="M12.069 0H23v10.931H12.069z" fill="white"/>
-                            <path d="M0 12.069h10.931V23H0z" fill="white"/>
-                            <path d="M12.069 12.069H23V23H12.069z" fill="white"/>
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>mariprofessional@outlook.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <p>+34 674-837-224</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-details">
-                        <h3>Location</h3>
-                        <p>Barcelona, Spain</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://linkedin.com/in/majoalfig" target="_blank">linkedin.com/in/majoalfig</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <form class="contact-form fade-in" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <form class="contact-form intake-form fade-in" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="15405423-1cc5-4f31-940b-ea86027a451b">
-                <input type="hidden" name="subject" value="New message from Portfolio">
-                <input type="hidden" name="from_name" value="Portfolio Contact Form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                <input type="hidden" name="subject" value="New Intake Form Submission">
+                <input type="hidden" name="from_name" value="Portfolio Intake Form">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="company">Company / Project</label>
+                    <input type="text" id="company" name="company" placeholder="What are you building?">
                 </div>
+
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label for="support-type">What kind of support are you looking for?</label>
+                    <select id="support-type" name="support_type" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Operational Coordination Support">Operational Coordination Support</option>
+                        <option value="Startup Operations Management">Startup Operations Management</option>
+                        <option value="Fractional Operations Partner">Fractional Operations Partner</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                    </select>
                 </div>
-                <button type="submit" class="submit-button">Send Message</button>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="team-size">Team size</label>
+                        <select id="team-size" name="team_size">
+                            <option value="" disabled selected>Select</option>
+                            <option value="Solo founder">Solo founder</option>
+                            <option value="2–5 people">2–5 people</option>
+                            <option value="5–10 people">5–10 people</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Investment range</label>
+                        <select id="budget" name="budget">
+                            <option value="" disabled selected>Select</option>
+                            <option value="Under €1k/month">Under €1k/month</option>
+                            <option value="€1k–€2k/month">€1k–€2k/month</option>
+                            <option value="€2k–€4k/month">€2k–€4k/month</option>
+                            <option value="€4k+/month">€4k+/month</option>
+                            <option value="Not sure yet">Not sure yet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">What feels most challenging right now?</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your current operational challenges." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send →</button>
             </form>
         </div>
     </section>
@@ -387,11 +374,35 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p class="footer-copy">&copy; 2026 Marianna &Aacute;lvarez. All rights reserved.</p>
-            <a href="https://cal.com/mari-reddev" target="_blank" class="cal-button">Schedule a Meeting →</a>
+            <div class="footer-center">
+                <div class="footer-contact">
+                    <span>mariprofessional@outlook.com</span>
+                    <span class="footer-sep">·</span>
+                    <span>+34 674-837-224</span>
+                    <span class="footer-sep">·</span>
+                    <span>Barcelona, Spain</span>
+                    <span class="footer-sep">·</span>
+                    <a href="https://linkedin.com/in/majoalfig" target="_blank">linkedin.com/in/majoalfig</a>
+                </div>
+                <div class="footer-contact">
+                    <span onclick="openCertModal('capm')" class="footer-cert-link">CAPM · Project Management Institute</span>
+                    <span class="footer-sep">·</span>
+                    <span onclick="openCertModal('google-pm')" class="footer-cert-link">Google Project Management Certificate</span>
+                </div>
+                <p class="footer-copy" data-i18n="footer-copy">&copy; 2026 Marianna &Aacute;lvarez. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="footer-sep">·</span>
+                    <a href="#">Legal Notice</a>
+                    <span class="footer-sep">·</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <img src="Membership Badge Download.png" alt="CAPM PMI Badge" class="footer-badge-large">
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

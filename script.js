@@ -1,3 +1,38 @@
+// Language toggle
+const langToggle = document.getElementById('langToggle');
+const langs = ['en', 'es', 'ca'];
+const langFlags = { en: 'EN', es: 'ESP', ca: 'CAT' };
+let currentLang = localStorage.getItem('lang') || 'en';
+
+function applyTranslations(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
+    langToggle.textContent = langFlags[lang];
+    localStorage.setItem('lang', lang);
+    currentLang = lang;
+}
+
+applyTranslations(currentLang);
+
+langToggle.addEventListener('click', () => {
+    const next = langs[(langs.indexOf(currentLang) + 1) % langs.length];
+    applyTranslations(next);
+});
+
+// Dark mode toggle
+const themeToggle = document.getElementById('themeToggle');
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+}
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+});
+
 // Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
@@ -84,34 +119,34 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 const projectData = {
     fundraisin: {
         title: 'Fund Raisin',
-        description: 'A comprehensive web3 platform designed for transparent and efficient fund management and fundraising in the blockchain ecosystem.',
-        role: 'Product Manager',
+        description: 'A web3 fundraising platform where I served as embedded Project Manager — coordinating across teams and keeping the product moving from roadmap to release.',
+        role: 'Product Owner → Project Management',
         responsibilities: [
-            'Leading product strategy and roadmap development',
-            'Coordinating multidisciplinary teams (development, design, marketing)',
-            'Stakeholder communication and alignment',
-            'Product launch execution with measurable KPIs',
-            'User research and feature prioritization'
+            'Structured product roadmaps and sprint priorities to maintain execution clarity.',
+            'Coordinated communication across development, design and marketing teams.',
+            'Maintained alignment between stakeholders through regular progress communication.',
+            'Launch planning and execution',
+            'Feature prioritization based on user feedback and team capacity'
         ],
-        technologies: ['Web3', 'Blockchain', 'Smart Contracts', 'DeFi'],
-        impact: 'Successfully launched platform with significant user adoption in the blockchain fundraising space',
+        technologies: ['Web3', 'Blockchain', 'Cross-team Coordination', 'Product Operations', 'Workflow Management','Remote Teams'],
+        impact: 'Helped maintain operational clarity and cross-functional coordination throughout product development and launch, supporting the team in moving from planning to execution in a fast-paced startup environment.',
         links: [
-            { text: 'Visit Fund Raisin', url: 'https://www.fundraisin.app' }
+            { text: 'Explore the Project', url: 'https://www.fundraisin.app' }
         ]
     },
     redbridge: {
         title: 'Redbridge',
-        description: 'A bridge technology solution connecting different blockchain ecosystems and technologies, enabling seamless integration and interoperability.',
+        description: 'A blockchain bridge product requiring tight coordination between distributed technical teams, clear task ownership, and consistent progress tracking.',
         role: 'Project Manager',
         responsibilities: [
-            'Coordination between development teams',
-            'Task management and sprint planning',
-            'Administrative oversight and project documentation',
-            'Timeline management and milestone tracking',
-            'Resource allocation and team supervision'
+            'Tracking project milestones and task progress',
+            'Task management, sprint planning, and backlog organization',
+            'Project documentation and operational oversight',
+            'Maintain visibility across priorities and deliverables',
+            'Clear communication flow between technical leads and stakeholders'
         ],
-        technologies: ['Bridge Technology', 'Blockchain', 'Cross-chain Integration'],
-        impact: 'Ensured smooth project execution and timely delivery through effective team coordination and task management',
+        technologies: ['Bridge Technology', 'Blockchain', 'Task Coordination'],
+        impact: 'Kept a complex, distributed team on track through structured coordination and clear communication throughout the project lifecycle.',
         links: [
             { text: 'Visit Redbridge Demo', url: 'https://redbridge-demo.red.dev/' },
             { text: 'Visit red.dev', url: 'https://red.dev' }
@@ -239,6 +274,14 @@ function closeCVModal() {
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
 }
+
+// Values accordion
+document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const item = trigger.closest('.accordion-item');
+        item.classList.toggle('is-open');
+    });
+});
 
 // Smooth scroll with offset for fixed header
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
