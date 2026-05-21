@@ -11,7 +11,8 @@ const translations = {
         'nav-contact': 'Contact',
 
         // Hero
-        'hero-subtitle': 'Project Manager and Operations Consultant',
+        'hero-hook': 'I help businesses run smoother.',
+        'hero-subtitle': 'Project Manager · Operations Consultant',
         'hero-description': "I help early-stage startups and small teams run more smoothly — bringing structure to day-to-day operations, clarity to workflows, and consistency to how things get done.\n\nWith a background in UX, product ownership, and project management, I work alongside founders and team leads as an embedded operational partner.",
         'hero-cta': 'Book a Video Call',
 
@@ -102,7 +103,29 @@ const translations = {
         'form-name': 'Name',
         'form-email': 'Email',
         'form-message': 'Message',
-        'form-submit': 'Send Message',
+        'form-submit': 'Send →',
+
+        // Contact form fields
+        'form-name-label': 'Name',
+        'form-name-placeholder': 'Your name',
+        'form-email-label': 'Email',
+        'form-company-label': 'Company / Project',
+        'form-company-placeholder': 'What are you building?',
+        'form-support-label': 'What kind of support are you looking for?',
+        'form-select-option': 'Select an option',
+        'form-support-op1': 'Operational Coordination Support',
+        'form-support-op2': 'Startup Operations Management',
+        'form-support-op3': 'Fractional Operations Partner',
+        'form-not-sure': 'Not sure yet',
+        'form-team-label': 'Team size',
+        'form-select-short': 'Select',
+        'form-team-op1': 'Solo / freelance',
+        'form-team-op2': '2–5 people',
+        'form-team-op3': '5–10 people',
+        'form-budget-label': 'Investment range',
+        'form-budget-op1': 'Under €1k/month',
+        'form-message-label': 'What feels most challenging right now?',
+        'form-message-placeholder': 'Tell me a bit about your current operational challenges.',
 
         // Footer
         'footer-copy': '© 2026 Marianna Álvarez. All rights reserved.',
@@ -163,8 +186,8 @@ const translations = {
         'value6-desc': 'Structure reduces stress. Well-run ops make space for focus, creativity, and growth.',
 
         // Final CTA
-        'cta-final-title': 'Need operational clarity for your startup?',
-        'cta-final-desc': "Let's find out how I can help your team run with less friction and more focus.",
+        'cta-final-title': 'Ready to bring more clarity to how you work?',
+        'cta-final-desc': "Whether you're a startup, a small business, a freelancer, or an individual — let's find out how I can help you run with less friction and more focus.",
         'cta-final-btn': 'Book a Video Call',
 
         // Nav
@@ -187,7 +210,8 @@ const translations = {
         'nav-contact': 'Contacto',
 
         // Hero
-        'hero-subtitle': 'Project Manager y Consultora de Operaciones',
+        'hero-hook': 'Ayudo a empresas a funcionar mejor.',
+        'hero-subtitle': 'Project Manager · Consultora de Operaciones',
         'hero-description': 'Ayudo a startups y equipos pequeños a funcionar con más claridad — aportando estructura a las operaciones del día a día, orden a los flujos de trabajo y consistencia en la ejecución.\n\nCon experiencia en UX, product ownership y gestión de proyectos, trabajo con fundadores y responsables de equipo como socia operativa.',
         'hero-cta': 'Reservar una Llamada de Descubrimiento',
 
@@ -278,7 +302,29 @@ const translations = {
         'form-name': 'Nombre',
         'form-email': 'Correo',
         'form-message': 'Mensaje',
-        'form-submit': 'Enviar Mensaje',
+        'form-submit': 'Enviar →',
+
+        // Contact form fields
+        'form-name-label': 'Nombre',
+        'form-name-placeholder': 'Tu nombre',
+        'form-email-label': 'Correo electrónico',
+        'form-company-label': 'Empresa / Proyecto',
+        'form-company-placeholder': '¿Qué estás construyendo?',
+        'form-support-label': '¿Qué tipo de apoyo buscas?',
+        'form-select-option': 'Selecciona una opción',
+        'form-support-op1': 'Apoyo en Coordinación Operativa',
+        'form-support-op2': 'Gestión de Operaciones para Startups',
+        'form-support-op3': 'Socia Operativa Fraccional',
+        'form-not-sure': 'Aún no lo sé',
+        'form-team-label': 'Tamaño del equipo',
+        'form-select-short': 'Selecciona',
+        'form-team-op1': 'Solo / autónomo',
+        'form-team-op2': '2–5 personas',
+        'form-team-op3': '5–10 personas',
+        'form-budget-label': 'Rango de inversión',
+        'form-budget-op1': 'Menos de €1k/mes',
+        'form-message-label': '¿Qué es lo más desafiante ahora mismo?',
+        'form-message-placeholder': 'Cuéntame un poco sobre tus retos operativos actuales.',
 
         // Footer
         'footer-copy': '© 2026 Marianna Álvarez. Todos los derechos reservados.',
@@ -339,8 +385,8 @@ const translations = {
         'value6-desc': 'La estructura reduce el estrés. Unas operaciones bien gestionadas hacen espacio para el foco, la creatividad y el crecimiento.',
 
         // Final CTA
-        'cta-final-title': '¿Necesita tu startup más claridad operativa?',
-        'cta-final-desc': 'Descubramos cómo puedo ayudar a tu equipo a funcionar con menos fricción y más foco.',
+        'cta-final-title': '¿Listo para trabajar con más claridad?',
+        'cta-final-desc': 'Tanto si eres una startup, una pequeña empresa, autónomo o particular — encontremos cómo puedo ayudarte a trabajar con menos fricción y más foco.',
         'cta-final-btn': 'Reservar una Llamada de Descubrimiento',
 
         // Nav
@@ -363,7 +409,8 @@ const translations = {
         'nav-contact': 'Contacte',
 
         // Hero
-        'hero-subtitle': "Project Manager i Consultora d'Operacions",
+        'hero-hook': "Ajudo empreses a funcionar millor.",
+        'hero-subtitle': "Project Manager · Consultora d'Operacions",
         'hero-description': "Ajudo startups i equips petits a funcionar amb més claredat — aportant estructura a les operacions del dia a dia, ordre als fluxos de treball i consistència en l'execució.\n\nAmb experiència en UX, product ownership i gestió de projectes, treballo amb fundadors i responsables d'equip com a sòcia operativa.",
         'hero-cta': 'Reservar una Trucada de Descoberta',
 
@@ -454,7 +501,29 @@ const translations = {
         'form-name': 'Nom',
         'form-email': 'Correu',
         'form-message': 'Missatge',
-        'form-submit': 'Enviar Missatge',
+        'form-submit': 'Enviar →',
+
+        // Contact form fields
+        'form-name-label': 'Nom',
+        'form-name-placeholder': 'El teu nom',
+        'form-email-label': 'Correu electrònic',
+        'form-company-label': 'Empresa / Projecte',
+        'form-company-placeholder': "Què estàs construint?",
+        'form-support-label': 'Quin tipus de suport busques?',
+        'form-select-option': 'Selecciona una opció',
+        'form-support-op1': 'Suport en Coordinació Operativa',
+        'form-support-op2': "Gestió d'Operacions per a Startups",
+        'form-support-op3': 'Sòcia Operativa Fraccional',
+        'form-not-sure': 'Encara no ho sé',
+        'form-team-label': "Mida de l'equip",
+        'form-select-short': 'Selecciona',
+        'form-team-op1': 'Sol / autònom',
+        'form-team-op2': '2–5 persones',
+        'form-team-op3': '5–10 persones',
+        'form-budget-label': "Rang d'inversió",
+        'form-budget-op1': "Menys d'€1k/mes",
+        'form-message-label': 'Què et sembla més desafiant ara mateix?',
+        'form-message-placeholder': "Explica'm una mica els teus reptes operatius actuals.",
 
         // Footer
         'footer-copy': '© 2026 Marianna Álvarez. Tots els drets reservats.',
@@ -515,8 +584,8 @@ const translations = {
         'value6-desc': "L'estructura redueix l'estrès. Unes operacions ben gestionades fan espai per al focus, la creativitat i el creixement.",
 
         // Final CTA
-        'cta-final-title': 'El teu startup necessita més claredat operativa?',
-        'cta-final-desc': "Descobrim com puc ajudar el teu equip a funcionar amb menys fricció i més focus.",
+        'cta-final-title': 'Preparat per treballar amb més claredat?',
+        'cta-final-desc': "Tant si ets una startup, una petita empresa, autònom o particular — trobem com puc ajudar-te a treballar amb menys fricció i més focus.",
         'cta-final-btn': 'Reservar una Trucada de Descoberta',
 
         // Nav

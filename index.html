@@ -45,8 +45,9 @@
         <div class="hero-content">
             <img src="Foto profesional.jpg" alt="Marianna Álvarez" class="profile-img">
             <h1>Marianna Álvarez</h1>
-            <p class="subtitle" data-i18n="hero-subtitle">Project Manager and Operations Consultant</p>
-            <p data-i18n="hero-description">I help founders and small teams build structure, coordinate across people, and keep operations running smoothly — so you can focus on building.</p>
+            <p class="hero-hook" data-i18n="hero-hook">I help businesses run smoother.</p>
+            <p class="subtitle" data-i18n="hero-subtitle">Project Manager · Operations Consultant</p>
+            <p class="hero-desc" data-i18n="hero-description">Structure, clarity, and consistency — for teams that want to focus on building, not firefighting.</p>
             <a href="https://cal.com/mari-reddev" target="_blank" class="cta-button" data-i18n="hero-cta">Book a Video Call</a>
         </div>
     </section>
@@ -60,21 +61,21 @@
                 <div class="step-number">01</div>
                 <h3 data-i18n="process-step1-title">Discovery Call</h3>
             </div>
+            <div class="process-arrow">→</div>
             <div class="process-step fade-in">
                 <div class="step-number">02</div>
                 <h3 data-i18n="process-step2-title">Operational Assessment</h3>
             </div>
+            <div class="process-arrow">→</div>
             <div class="process-step fade-in">
                 <div class="step-number">03</div>
                 <h3 data-i18n="process-step3-title">Workflow &amp; Team Alignment</h3>
             </div>
+            <div class="process-arrow">→</div>
             <div class="process-step fade-in">
                 <div class="step-number">04</div>
                 <h3 data-i18n="process-step4-title">Ongoing Support</h3>
             </div>
-        </div>
-        <div class="process-cta">
-            <a href="https://cal.com/mari-reddev" target="_blank" class="section-cta-btn" data-i18n="process-cta-btn">Book a Video Call</a>
         </div>
     </section>
 
@@ -82,12 +83,12 @@
     <section id="experience">
         <h2 data-i18n="experience-title">Experience</h2>
         <p class="section-description" data-i18n="experience-description">Real projects. Real coordination challenges — and what it took to keep things moving.</p>
-        <div class="experience-grid">
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="FundRaisin Logo.png" alt="Fund Raisin Logo" style="width: 100%; height: 100%; object-fit: contain;">
+        <div class="experience-list">
+            <div class="exp-item fade-in" onclick="openModal('fundraisin')">
+                <div class="exp-icon">
+                    <img src="FundRaisin Logo.png" alt="Fund Raisin" style="width:100%;height:100%;object-fit:contain;">
                 </div>
-                <div class="project-content">
+                <div class="exp-body">
                     <h3>Fund Raisin</h3>
                     <div class="project-tags">
                         <span class="tag" data-i18n="tag-web3">Web3</span>
@@ -95,39 +96,39 @@
                         <span class="tag" data-i18n="tag-leadership">Cross-team Alignment</span>
                         <span class="tag" data-i18n="tag-launch">Roadmap Management</span>
                     </div>
-                    <a href="#" class="project-link" onclick="openModal('fundraisin'); return false;" data-i18n="view-details">View details →</a>
                 </div>
+                <span class="exp-view">View →</span>
             </div>
 
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="Redbridge Logo (Icon).png" alt="Redbridge Logo" style="width: 100%; height: 100%; object-fit: contain;">
+            <div class="exp-item fade-in" onclick="openModal('redbridge')">
+                <div class="exp-icon">
+                    <img src="Redbridge Logo (Icon).png" alt="Redbridge" style="width:100%;height:100%;object-fit:contain;">
                 </div>
-                <div class="project-content">
-                    <h3>Redbridge</h3>
+                <div class="exp-body">
+                    <h3>red·bridge</h3>
                     <div class="project-tags">
                         <span class="tag" data-i18n="tag-bridge">Blockchain</span>
                         <span class="tag" data-i18n="tag-coordination">Team Coordination</span>
                         <span class="tag" data-i18n="tag-task">Task Management</span>
                         <span class="tag" data-i18n="tag-oversight">Remote Teams</span>
                     </div>
-                    <a href="#" class="project-link" onclick="openModal('redbridge'); return false;" data-i18n="view-details">View details →</a>
                 </div>
+                <span class="exp-view">View →</span>
             </div>
 
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="Membership Badge Download.png" alt="PMI CAPM Badge" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;">
+            <div class="exp-item fade-in" onclick="openPMIModal()">
+                <div class="exp-icon">
+                    <img src="Membership Badge Download.png" alt="PMI" style="width:100%;height:100%;object-fit:contain;border-radius:50%;">
                 </div>
-                <div class="project-content">
+                <div class="exp-body">
                     <h3>PMI — CAPM Certified</h3>
                     <div class="project-tags">
                         <span class="tag">Project Management</span>
                         <span class="tag">CAPM</span>
                         <span class="tag">PMI Barcelona</span>
                     </div>
-                    <a href="#" class="project-link" onclick="openPMIModal(); return false;">View details →</a>
                 </div>
+                <span class="exp-view">View →</span>
             </div>
         </div>
     </section>
@@ -138,19 +139,15 @@
         <p class="section-description" data-i18n="testimonials-description">A few words from people I've worked alongside.</p>
         <div class="testimonials-grid">
             <div class="testimonial-card fade-in">
-                <div class="testimonial-logo">
-                    <img src="Reddev Logo (Dark).png" alt="red.dev" class="company-logo-img">
-                </div>
-                <p class="testimonial-quote">Mari has been instrumental in maintaining operational structure across our startup environment. Over several years, she helped coordinate workflows, support project execution, maintain team organization and improve operational visibility across moving priorities. Her ability to bring clarity and consistency to fast-moving environments has been incredibly valuable</p>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">Mari has been instrumental in maintaining operational structure across our startup environment. Over several years, she helped coordinate workflows, support project execution, maintain team organization and improve operational visibility across moving priorities. Her ability to bring clarity and consistency to fast-moving environments has been incredibly valuable.</p>
                 <div class="testimonial-author">
                     <span class="author-name">Kit Sturgeon</span>
                     <span class="author-role">CEO of Reddev, INC</span>
                 </div>
             </div>
             <div class="testimonial-card fade-in">
-                <div class="testimonial-logo">
-                    <img src="zachrogers.png" alt="Zach Rogers" class="company-logo-img">
-                </div>
+                <div class="testimonial-stars">★★★★★</div>
                 <p class="testimonial-quote">Mari has a unique ability to bring structure to chaos. Whether it's project coordination, creative workflows or strategic decisions, her ability to ask the right questions and identify areas for improvement has consistently helped me move projects forward with more clarity.</p>
                 <div class="testimonial-author">
                     <span class="author-name">Zach Rogers</span>
@@ -158,9 +155,7 @@
                 </div>
             </div>
             <div class="testimonial-card fade-in">
-                <div class="testimonial-logo">
-                    <img src="navas technology.png" alt="Navas Technology" class="company-logo-img">
-                </div>
+                <div class="testimonial-stars">★★★★★</div>
                 <p class="testimonial-quote">Mari has a strong ability to bring structure to uncertainty. She helped me rethink how I presented deliverables, pricing and project expectations for an international client, making the whole process feel more organized and sustainable.</p>
                 <div class="testimonial-author">
                     <span class="author-name">Rainer Navas</span>
@@ -174,42 +169,34 @@
     <section id="values">
         <h2 data-i18n="values-title">Values &amp; Approach</h2>
         <p class="section-description" data-i18n="values-description">The principles that guide how I work with every team.</p>
-        <div class="values-accordion">
-            <div class="accordion-item">
-                <button class="accordion-trigger">
-                    <span data-i18n="value1-title">Clarity</span>
-                    <span class="accordion-icon">+</span>
-                </button>
-                <div class="accordion-body">
-                    <p data-i18n="value1-desc">Clear communication and documented workflows. No ambiguity — just a shared understanding of what needs to happen and why.</p>
+        <div class="values-grid">
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
                 </div>
+                <h3 data-i18n="value1-title">Clarity</h3>
+                <p data-i18n="value1-desc">Clear communication and documented workflows. No ambiguity — just a shared understanding of what needs to happen and why.</p>
             </div>
-            <div class="accordion-item">
-                <button class="accordion-trigger">
-                    <span data-i18n="value2-title">Communication</span>
-                    <span class="accordion-icon">+</span>
-                </button>
-                <div class="accordion-body">
-                    <p data-i18n="value2-desc">Bridging technical and non-technical. Keeping everyone on the same page, even across distributed teams.</p>
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
                 </div>
+                <h3 data-i18n="value2-title">Communication</h3>
+                <p data-i18n="value2-desc">Bridging technical and non-technical. Keeping everyone on the same page, even across distributed teams.</p>
             </div>
-            <div class="accordion-item">
-                <button class="accordion-trigger">
-                    <span data-i18n="value4-title">Sustainable Workflows</span>
-                    <span class="accordion-icon">+</span>
-                </button>
-                <div class="accordion-body">
-                    <p data-i18n="value4-desc">Systems that actually get used. Not just documented and forgotten — built to fit the team's reality.</p>
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
                 </div>
+                <h3 data-i18n="value4-title">Sustainable Workflows</h3>
+                <p data-i18n="value4-desc">Systems that actually get used. Not just documented and forgotten — built to fit the team's reality.</p>
             </div>
-            <div class="accordion-item">
-                <button class="accordion-trigger">
-                    <span data-i18n="value5-title">Long-Term Collaboration</span>
-                    <span class="accordion-icon">+</span>
-                </button>
-                <div class="accordion-body">
-                    <p data-i18n="value5-desc">I work alongside teams, not just deliver and leave. Good operations grow with the company.</p>
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                 </div>
+                <h3 data-i18n="value5-title">Long-Term Collaboration</h3>
+                <p data-i18n="value5-desc">I work alongside teams, not just deliver and leave. Good operations grow with the company.</p>
             </div>
         </div>
     </section>
@@ -253,8 +240,8 @@
 
     <!-- Final CTA -->
     <section id="cta-final">
-        <h2 data-i18n="cta-final-title">Need operational clarity for your startup?</h2>
-        <p data-i18n="cta-final-desc">Let's find out how I can help your team run with less friction and more focus.</p>
+        <h2 data-i18n="cta-final-title">Ready to bring more clarity to how you work?</h2>
+        <p data-i18n="cta-final-desc">Whether you're a startup, a small business, a freelancer, or an individual — let's find out how I can help you run with less friction and more focus.</p>
         <a href="https://cal.com/mari-reddev" target="_blank" class="cta-button" data-i18n="cta-final-btn">Book a Video Call</a>
     </section>
 
@@ -270,61 +257,61 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <label for="name" data-i18n="form-name-label">Name</label>
+                        <input type="text" id="name" name="name" data-i18n-placeholder="form-name-placeholder" placeholder="Your name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email" data-i18n="form-email-label">Email</label>
                         <input type="email" id="email" name="email" placeholder="your@email.com" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="company">Company / Project</label>
-                    <input type="text" id="company" name="company" placeholder="What are you building?">
+                    <label for="company" data-i18n="form-company-label">Company / Project</label>
+                    <input type="text" id="company" name="company" data-i18n-placeholder="form-company-placeholder" placeholder="What are you building?">
                 </div>
 
                 <div class="form-group">
-                    <label for="support-type">What kind of support are you looking for?</label>
+                    <label for="support-type" data-i18n="form-support-label">What kind of support are you looking for?</label>
                     <select id="support-type" name="support_type" required>
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="Operational Coordination Support">Operational Coordination Support</option>
-                        <option value="Startup Operations Management">Startup Operations Management</option>
-                        <option value="Fractional Operations Partner">Fractional Operations Partner</option>
-                        <option value="Not sure yet">Not sure yet</option>
+                        <option value="" disabled selected data-i18n="form-select-option">Select an option</option>
+                        <option value="Operational Coordination Support" data-i18n="form-support-op1">Operational Coordination Support</option>
+                        <option value="Startup Operations Management" data-i18n="form-support-op2">Startup Operations Management</option>
+                        <option value="Fractional Operations Partner" data-i18n="form-support-op3">Fractional Operations Partner</option>
+                        <option value="Not sure yet" data-i18n="form-not-sure">Not sure yet</option>
                     </select>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="team-size">Team size</label>
+                        <label for="team-size" data-i18n="form-team-label">Team size</label>
                         <select id="team-size" name="team_size">
-                            <option value="" disabled selected>Select</option>
-                            <option value="Solo founder">Solo founder</option>
-                            <option value="2–5 people">2–5 people</option>
-                            <option value="5–10 people">5–10 people</option>
+                            <option value="" disabled selected data-i18n="form-select-short">Select</option>
+                            <option value="Solo founder" data-i18n="form-team-op1">Solo founder</option>
+                            <option value="2–5 people" data-i18n="form-team-op2">2–5 people</option>
+                            <option value="5–10 people" data-i18n="form-team-op3">5–10 people</option>
                             <option value="10+">10+</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="budget">Investment range</label>
+                        <label for="budget" data-i18n="form-budget-label">Investment range</label>
                         <select id="budget" name="budget">
-                            <option value="" disabled selected>Select</option>
-                            <option value="Under €1k/month">Under €1k/month</option>
+                            <option value="" disabled selected data-i18n="form-select-short">Select</option>
+                            <option value="Under €1k/month" data-i18n="form-budget-op1">Under €1k/month</option>
                             <option value="€1k–€2k/month">€1k–€2k/month</option>
                             <option value="€2k–€4k/month">€2k–€4k/month</option>
                             <option value="€4k+/month">€4k+/month</option>
-                            <option value="Not sure yet">Not sure yet</option>
+                            <option value="Not sure yet" data-i18n="form-not-sure">Not sure yet</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">What feels most challenging right now?</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your current operational challenges." required></textarea>
+                    <label for="message" data-i18n="form-message-label">What feels most challenging right now?</label>
+                    <textarea id="message" name="message" rows="5" data-i18n-placeholder="form-message-placeholder" placeholder="Tell me a bit about your current operational challenges." required></textarea>
                 </div>
 
-                <button type="submit" class="submit-button">Send →</button>
+                <button type="submit" class="submit-button" data-i18n="form-submit">Send →</button>
             </form>
         </div>
     </section>
@@ -333,27 +320,7 @@
     <div id="pmi-modal-overlay" class="modal-overlay" onclick="closePMIModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="modal-close" onclick="closePMIModal()">&times;</span>
-            <div id="pmi-modal-body">
-                <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
-                    <img src="Membership Badge Download.png" alt="PMI CAPM Badge" style="width:80px; height:80px; border-radius:50%;">
-                    <div>
-                        <h2 style="margin:0 0 0.25rem;">PMI Member</h2>
-                        <p style="margin:0; color:var(--gray-medium);">Project Management Institute</p>
-                    </div>
-                </div>
-                <div class="modal-section">
-                    <h3>About My Membership</h3>
-                    <p>I am an active member of the <strong>PMI Barcelona Chapter</strong> — the local chapter of the Project Management Institute, the world's leading association for project management professionals.</p>
-                    <p style="margin-top:0.75rem;">PMI membership connects me to a global community of practitioners, ongoing professional development resources, and the latest standards in project and operations management.</p>
-                </div>
-                <div class="modal-section">
-                    <h3>Certification</h3>
-                    <p>I hold the <strong>CAPM (Certified Associate in Project Management)</strong> credential — a globally recognized certification demonstrating knowledge of project management fundamentals and the PMI framework.</p>
-                </div>
-                <div class="modal-section">
-                    <a href="https://www.pmi.org" target="_blank" rel="noopener noreferrer" class="modal-link">Visit PMI.org →</a>
-                </div>
-            </div>
+            <div id="pmi-modal-body"></div>
         </div>
     </div>
 
