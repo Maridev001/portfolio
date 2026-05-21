@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy — Marianna Álvarez</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-hero {
+            background: var(--gray-light);
+            padding: 8rem 2rem 3.5rem;
+            text-align: center;
+        }
+        .legal-hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--gray-dark);
+            margin-bottom: 0.5rem;
+        }
+        .legal-hero p {
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+        }
+        .legal-body {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3.5rem 2rem 5rem;
+            color: var(--gray-dark);
+        }
+        .legal-body h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 2.5rem 0 0.75rem;
+            color: var(--gray-dark);
+        }
+        .legal-body p, .legal-body li {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--gray-medium);
+            margin-bottom: 0.5rem;
+        }
+        .legal-body ul {
+            padding-left: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .legal-body a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .legal-body a:hover {
+            text-decoration: underline;
+        }
+        .legal-back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.88rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .legal-back:hover {
+            text-decoration: underline;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.9rem;
+        }
+        .cookie-table th {
+            text-align: left;
+            padding: 0.6rem 0.85rem;
+            background: var(--gray-light);
+            color: var(--gray-dark);
+            font-weight: 600;
+            border-bottom: 2px solid var(--gray-light);
+        }
+        .cookie-table td {
+            padding: 0.6rem 0.85rem;
+            color: var(--gray-medium);
+            border-bottom: 1px solid var(--gray-light);
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <script>if(localStorage.getItem('darkMode')==='true')document.body.classList.add('dark-mode');</script>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Marianna <span>Álvarez</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <a href="https://cal.com/mari-reddev" target="_blank" class="nav-meeting-btn">Schedule a Meeting →</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="legal-hero">
+        <h1>Cookie Policy</h1>
+        <p>Last updated: May 2026</p>
+    </div>
+
+    <div class="legal-body">
+        <a href="index.html" class="legal-back">← Back to home</a>
+
+        <p>This Cookie Policy explains what cookies are, which ones this website uses, and how you can control them — in accordance with Spanish Law 34/2002 (LSSI-CE) and the EU ePrivacy Directive.</p>
+
+        <h2>1. What Are Cookies?</h2>
+        <p>Cookies are small text files stored on your device when you visit a website. They allow the site to remember your preferences and behaviour across visits.</p>
+
+        <h2>2. Cookies Used on This Website</h2>
+        <p>This website uses only strictly necessary cookies to function correctly. No advertising or tracking cookies are used.</p>
+
+        <table class="cookie-table">
+            <thead>
+                <tr>
+                    <th>Cookie</th>
+                    <th>Purpose</th>
+                    <th>Type</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>lang</code></td>
+                    <td>Remembers your selected language (EN / ES / CA)</td>
+                    <td>Functional</td>
+                    <td>Persistent (localStorage)</td>
+                </tr>
+                <tr>
+                    <td><code>darkMode</code></td>
+                    <td>Remembers your light/dark mode preference</td>
+                    <td>Functional</td>
+                    <td>Persistent (localStorage)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Both values are stored in your browser's <strong>localStorage</strong>, not as traditional cookies. They are never transmitted to any server and contain no personal data.</p>
+
+        <h2>3. Third-Party Services</h2>
+        <p>This website may include a link to <a href="https://cal.com" target="_blank">cal.com</a> for scheduling meetings. If you visit that service, it operates under its own cookie and privacy policies.</p>
+
+        <h2>4. How to Control Cookies</h2>
+        <p>You can clear localStorage and cookies at any time through your browser settings. Here's how to do it in the most common browsers:</p>
+        <ul>
+            <li><strong>Chrome:</strong> Settings → Privacy and security → Clear browsing data</li>
+            <li><strong>Firefox:</strong> Settings → Privacy & Security → Cookies and Site Data → Clear Data</li>
+            <li><strong>Safari:</strong> Preferences → Privacy → Manage Website Data</li>
+            <li><strong>Edge:</strong> Settings → Privacy, search and services → Clear browsing data</li>
+        </ul>
+        <p>Clearing this data will reset your language and theme preferences on this website.</p>
+
+        <h2>5. Changes to This Policy</h2>
+        <p>I may update this Cookie Policy if new functionality is added to the site. The date at the top of this page reflects the most recent revision.</p>
+
+        <h2>6. Contact</h2>
+        <p>Questions about this policy? Reach me at <a href="mailto:mariprofessional@outlook.com">mariprofessional@outlook.com</a>.</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-center">
+                <div class="footer-contact">
+                    <span>mariprofessional@outlook.com</span>
+                    <span class="footer-sep">·</span>
+                    <span>+34 674-837-224</span>
+                    <span class="footer-sep">·</span>
+                    <span>Barcelona, Spain</span>
+                    <span class="footer-sep">·</span>
+                    <a href="https://linkedin.com/in/majoalfig" target="_blank">linkedin.com/in/majoalfig</a>
+                </div>
+                <p class="footer-copy">© 2026 Marianna Álvarez. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="footer-sep">·</span>
+                    <a href="legal-notice.html">Legal Notice</a>
+                    <span class="footer-sep">·</span>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('active'));
+        });
+    </script>
+</body>
+</html>
