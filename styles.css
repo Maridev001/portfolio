@@ -1815,12 +1815,43 @@ body.dark-mode .tech-tag {
         text-decoration: none;
     }
 
+    header {
+        background-color: var(--gray-light);
+    }
+
+    .hero {
+        background: var(--gray-light);
+        color: var(--gray-dark);
+    }
+
     .hero h1 {
         font-size: 2rem;
+        text-shadow: none;
+        color: var(--gray-dark);
     }
 
     .hero .subtitle {
         font-size: 1.2rem;
+        color: var(--gray-dark);
+        opacity: 0.8;
+    }
+
+    .hero p {
+        color: var(--gray-dark);
+        opacity: 0.75;
+    }
+
+    .profile-img {
+        border-color: var(--primary-color);
+    }
+
+    .cta-button {
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+
+    .cta-button:hover {
+        box-shadow: 0 10px 30px rgba(181, 138, 122, 0.4);
     }
 
     .about-content,
