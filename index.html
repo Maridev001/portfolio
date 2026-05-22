@@ -420,7 +420,27 @@
         </div>
     </footer>
 
+    <!-- Chatbot -->
+    <button class="chat-bubble" id="chatBubble" onclick="toggleChat()" aria-label="Open chat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7z"/>
+        </svg>
+    </button>
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <img src="Foto profesional.jpg" alt="Marianna" class="chat-avatar">
+            <div class="chat-header-info">
+                <span class="chat-name">Marianna's Assistant</span>
+                <span class="chat-status">Ask me anything ✦</span>
+            </div>
+            <button class="chat-close" onclick="toggleChat()" aria-label="Close chat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-options" id="chatOptions"></div>
+    </div>
+
     <script src="translations.js"></script>
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
