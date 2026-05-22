@@ -132,9 +132,9 @@ const projectData = {
     fundraisin: {
         title: 'Fund Raisin',
         description: {
-            en: 'A web3 fundraising platform where I served as embedded Project Manager — coordinating across teams and keeping the product moving from roadmap to release.',
-            es: 'Una plataforma de recaudación de fondos web3 donde actué como Project Manager embedded — coordinando entre equipos y manteniendo el producto en movimiento desde el roadmap hasta el lanzamiento.',
-            ca: "Una plataforma de finançament col·lectiu web3 on vaig actuar com a Project Manager embedded — coordinant entre equips i mantenint el producte en moviment des del roadmap fins al llançament."
+            en: 'Fund Raisin is a fundraising platform where creators can launch campaigns and offer digital art as rewards for supporters — combining crowdfunding with NFT-based incentives.',
+            es: 'Fund Raisin es una plataforma de recaudación de fondos donde los creadores pueden lanzar campañas y ofrecer arte digital como recompensa a sus colaboradores — combinando crowdfunding con incentivos basados en NFTs.',
+            ca: 'Fund Raisin és una plataforma de finançament col·lectiu on els creadors poden llançar campanyes i oferir art digital com a recompensa als seus col·laboradors — combinant crowdfunding amb incentius basats en NFTs.'
         },
         role: {
             en: 'Product Owner → Project Management',
@@ -142,11 +142,11 @@ const projectData = {
             ca: 'Product Owner → Gestió de Projectes'
         },
         responsibilities: {
-            en: ['Structured product roadmaps and sprint priorities to maintain execution clarity.', 'Coordinated communication across development, design and marketing teams.', 'Maintained alignment between stakeholders through regular progress communication.', 'Launch planning and execution', 'Feature prioritization based on user feedback and team capacity'],
-            es: ['Estructuré roadmaps de producto y prioridades de sprint para mantener la claridad de ejecución.', 'Coordiné la comunicación entre los equipos de desarrollo, diseño y marketing.', 'Mantuve la alineación entre stakeholders mediante comunicación regular del progreso.', 'Planificación y ejecución del lanzamiento', 'Priorización de funcionalidades basada en feedback de usuarios y capacidad del equipo'],
-            ca: ["Vaig estructurar roadmaps de producte i prioritats de sprint per mantenir la claredat d'execució.", 'Vaig coordinar la comunicació entre els equips de desenvolupament, disseny i màrqueting.', 'Vaig mantenir l\'alineació entre stakeholders mitjançant comunicació regular del progrés.', 'Planificació i execució del llançament', "Priorització de funcionalitats basada en feedback d'usuaris i capacitat de l'equip"]
+            en: ['Structured product roadmaps and sprint cycles to maintain execution clarity.', 'Coordinated across development, design and marketing teams.', 'Stakeholder communication and regular progress reporting.', 'QA testing coordination and bug tracking across releases.', 'Feature prioritization based on user feedback and team capacity.'],
+            es: ['Estructuré roadmaps de producto y ciclos de sprint para mantener la claridad de ejecución.', 'Coordiné entre los equipos de desarrollo, diseño y marketing.', 'Comunicación con stakeholders e informes de progreso regulares.', 'Coordinación de pruebas QA y seguimiento de bugs entre versiones.', 'Priorización de funcionalidades basada en feedback de usuarios y capacidad del equipo.'],
+            ca: ["Vaig estructurar roadmaps de producte i cicles de sprint per mantenir la claredat d'execució.", 'Vaig coordinar entre els equips de desenvolupament, disseny i màrqueting.', 'Comunicació amb stakeholders i informes de progrés regulars.', 'Coordinació de proves QA i seguiment de bugs entre versions.', "Priorització de funcionalitats basada en feedback d'usuaris i capacitat de l'equip."]
         },
-        technologies: ['Web3', 'Blockchain', 'Cross-team Coordination', 'Product Operations', 'Workflow Management', 'Remote Teams'],
+        technologies: ['Blockchain', 'Odoo', 'GitLab', 'GitHub', 'Google Suite', 'Cross-team Coordination', 'Workflow Management'],
         impact: {
             en: 'Helped maintain operational clarity and cross-functional coordination throughout product development and launch, supporting the team in moving from planning to execution in a fast-paced startup environment.',
             es: 'Ayudé a mantener la claridad operativa y la coordinación interfuncional durante el desarrollo del producto y el lanzamiento, apoyando al equipo en pasar de la planificación a la ejecución en un entorno de ritmo acelerado.',
@@ -159,9 +159,9 @@ const projectData = {
     redbridge: {
         title: 'red·bridge',
         description: {
-            en: 'A blockchain bridge product requiring tight coordination between distributed technical teams, clear task ownership, and consistent progress tracking.',
-            es: 'Un producto de blockchain bridge que requería una coordinación estrecha entre equipos técnicos distribuidos, una clara propiedad de las tareas y un seguimiento constante del progreso.',
-            ca: 'Un producte de blockchain bridge que requeria una coordinació estreta entre equips tècnics distribuïts, una propietat clara de les tasques i un seguiment constant del progrés.'
+            en: 'red·bridge is a blockchain bridge that enables cross-chain transactions between Zcash and Avalanche, allowing users to move assets securely between the two networks.',
+            es: 'red·bridge es un bridge blockchain que permite transacciones entre cadenas de Zcash y Avalanche, permitiendo a los usuarios mover activos de forma segura entre ambas redes.',
+            ca: 'red·bridge és un bridge blockchain que permet transaccions entre cadenes de Zcash i Avalanche, permetent als usuaris moure actius de forma segura entre les dues xarxes.'
         },
         role: { en: 'Project Manager', es: 'Project Manager', ca: 'Project Manager' },
         responsibilities: {
