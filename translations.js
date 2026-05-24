@@ -33,7 +33,7 @@ const translations = {
 
         // Experience
         'experience-title': 'Experience',
-        'experience-description': 'Two projects. One startup. Real coordination challenges — and what it took to keep things moving.',
+        'experience-description': 'Real coordination challenges — and what it took to keep things moving.',
         'project-fr-desc': 'Embedded product and operations coordination for a web3 fundraising platform. Structured sprint cycles, aligned stakeholders across design, development and marketing, and kept progress moving from roadmap to launch.',
         'project-rb-desc': 'Operational coordination for a blockchain bridge product with distributed development teams. Structured task ownership, maintained clear communication flows, and kept the project on track across the full lifecycle.',
         'tag-web3': 'Web3',
@@ -232,7 +232,7 @@ const translations = {
 
         // Experience
         'experience-title': 'Experiencia',
-        'experience-description': 'Dos proyectos. Una startup. Retos reales de coordinación — y lo que hizo falta para mantener las cosas en marcha.',
+        'experience-description': 'Retos reales de coordinación — y lo que hizo falta para mantener las cosas en marcha.',
         'project-fr-desc': 'Coordinación de producto y operaciones para una plataforma web3 de recaudación. Estructuré sprints, alineé stakeholders entre diseño, desarrollo y marketing, y mantuve el avance desde el roadmap hasta el lanzamiento.',
         'project-rb-desc': 'Coordinación operativa para un producto blockchain bridge con equipos de desarrollo distribuidos. Estructuré la responsabilidad de tareas, mantuve flujos de comunicación claros y mantuve el proyecto en curso durante todo el ciclo.',
         'tag-web3': 'Web3',
@@ -431,7 +431,7 @@ const translations = {
 
         // Experience
         'experience-title': "Experiència",
-        'experience-description': "Dos projectes. Una startup. Reptes reals de coordinació — i el que va caldre per mantenir les coses en marxa.",
+        'experience-description': "Reptes reals de coordinació — i el que va caldre per mantenir les coses en marxa.",
         'project-fr-desc': "Coordinació de producte i operacions per a una plataforma web3 de recaptació. Vaig estructurar sprints, alinear stakeholders entre disseny, desenvolupament i màrqueting, i mantenir l'avenç del roadmap fins al llançament.",
         'project-rb-desc': "Coordinació operativa per a un producte blockchain bridge amb equips de desenvolupament distribuïts. Vaig estructurar la responsabilitat de tasques, mantenir fluxos de comunicació clars i mantenir el projecte en curs durant tot el cicle.",
         'tag-web3': 'Web3',
