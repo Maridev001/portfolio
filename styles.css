@@ -210,6 +210,8 @@ body.dark-mode .theme-toggle {
 .hero {
     margin-top: 70px;
     background: var(--gray-light);
+    box-shadow: 0 0 0 100vmax var(--gray-light);
+    clip-path: inset(0 -100vmax);
     color: var(--gray-dark);
     padding: 6rem 2rem;
     text-align: center;
@@ -560,6 +562,10 @@ body.dark-mode .exp-body h3 {
     color: #F3ECE8;
 }
 
+body.dark-mode .tag {
+    background-color: #2a2420;
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
@@ -615,6 +621,10 @@ body.dark-mode .exp-body h3 {
 /* Services Section */
 #services {
     background-color: var(--gray-light);
+    box-shadow: 0 0 0 100vmax var(--gray-light);
+    clip-path: inset(0 -100vmax);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .services-grid {
@@ -654,6 +664,12 @@ body.dark-mode .exp-body h3 {
     color: var(--white);
 }
 
+.service-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
 .service-card h3 {
     color: var(--gray-dark);
     font-size: 1.05rem;
@@ -668,11 +684,10 @@ body.dark-mode .exp-body h3 {
     text-underline-offset: 4px;
 }
 
-.service-card p {
+.service-duration {
     color: var(--gray-medium);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 0.82rem;
+    font-weight: 500;
 }
 
 .service-list {
@@ -718,6 +733,32 @@ body.dark-mode .exp-body h3 {
 }
 
 /* Process Section */
+#process {
+    background-color: #8E6B5E;
+    box-shadow: 0 0 0 100vmax #8E6B5E;
+    clip-path: inset(0 -100vmax);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: -1px;
+}
+
+#process h2 {
+    color: #FFFFFF;
+}
+
+#process .section-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#process h2::after {
+    background-color: #FFFFFF;
+}
+
+#process .process-arrow {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
 .process-steps {
     display: flex;
     align-items: center;
@@ -777,16 +818,34 @@ body.dark-mode .exp-body h3 {
 /* Values Section */
 #values {
     background-color: var(--gray-light);
-    padding-bottom: 1.5rem;
+    box-shadow: 0 0 0 100vmax var(--gray-light);
+    clip-path: inset(0 -100vmax);
+    padding-bottom: 0;
 }
 
 #experience {
     padding-top: 1.5rem;
+    padding-bottom: 6rem;
+    background-color: #8E6B5E;
+    box-shadow: 0 0 0 100vmax #8E6B5E;
+    clip-path: inset(0 -100vmax);
+}
+
+#experience h2 {
+    color: #FFFFFF;
+}
+
+#experience .section-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#experience h2::after {
+    background-color: #FFFFFF;
 }
 
 .values-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
     margin-top: 2rem;
 }
@@ -891,7 +950,7 @@ body.dark-mode .value-card p {
 }
 
 #values {
-    padding-top: 1.5rem;
+    padding-top: 6rem;
 }
 
 .testimonials-grid {
@@ -980,6 +1039,10 @@ body.dark-mode .testimonial-author {
 
 /* Final CTA Section */
 #cta-final {
+    max-width: 100%;
+    margin: 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
     text-align: center;
     color: var(--white);
@@ -1107,8 +1170,10 @@ body.dark-mode .testimonial-author {
 }
 
 /* Contact Section */
-#contacto {
+#contact {
     background-color: var(--gray-light);
+    box-shadow: 0 0 0 100vmax var(--gray-light);
+    clip-path: inset(0 -100vmax);
 }
 
 .contact-container {
@@ -1473,6 +1538,16 @@ footer {
     text-underline-offset: 3px;
 }
 
+.footer-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.footer-whatsapp:hover {
+    color: var(--primary-color);
+}
+
 .footer-sep {
     opacity: 0.5;
 }
@@ -1571,6 +1646,13 @@ footer {
 
 #modal-body h2::after {
     display: none;
+}
+
+.modal-duration {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
 }
 
 .modal-description {
@@ -1804,7 +1886,7 @@ body.dark-mode .form-group textarea,
 body.dark-mode .form-group select {
     background-color: var(--gray-light);
     color: var(--gray-dark);
-    border-color: #2a2420;
+    border-color: rgba(255, 255, 255, 0.18);
 }
 
 body.dark-mode .modal-content,
@@ -1836,10 +1918,6 @@ body.dark-mode .service-card {
 
 body.dark-mode .process-step {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-}
-
-body.dark-mode .tag {
-    background-color: #2a2420;
 }
 
 body.dark-mode .tech-tag {

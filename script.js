@@ -229,7 +229,7 @@ function openModal(projectId) {
             <div class="project-links">
                 ${project.links.map(link => `
                     <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="modal-link">
-                        ${typeof link.text === 'object' ? link.text[lang] || link.text.en : link.text} →
+                        ${typeof link.text === 'object' ? link.text[lang] || link.text.en : link.text}
                     </a>
                 `).join('')}
             </div>
@@ -314,7 +314,7 @@ function openPMIModal() {
             <p>${p.certP}</p>
         </div>
         <div class="modal-section">
-            <a href="https://www.pmi.org" target="_blank" rel="noopener noreferrer" class="modal-link">${p.linkText} →</a>
+            <a href="https://www.pmi.org" target="_blank" rel="noopener noreferrer" class="modal-link">${p.linkText}</a>
         </div>
     `;
 
@@ -331,46 +331,49 @@ function closePMIModal() {
 // Service Modals
 const serviceData = {
     service1: {
-        title: { en: 'Operational Coordination Support', es: 'Coordinación Operativa', ca: 'Coordinació Operativa' },
+        title: { en: 'Your Team is Disorganized', es: 'Tu Equipo Está Desorganizado', ca: 'El Teu Equip Està Desorganitzat' },
+        duration: { en: '~12 weeks', es: '~12 semanas', ca: '~12 setmanes' },
         description: {
-            en: 'Light-touch coordination for teams that need structure without the overhead. I step in to organize task flow, facilitate syncs, and keep things from slipping.',
-            es: 'Coordinación ligera para equipos que necesitan estructura sin la burocracia. Me incorporo para organizar el flujo de tareas, facilitar las reuniones de sincronización y evitar que las cosas se pierdan.',
-            ca: "Coordinació lleugera per a equips que necessiten estructura sense la burocràcia. M'incorporo per organitzar el flux de tasques, facilitar les reunions de sincronització i evitar que les coses es perdin."
+            en: 'For teams that need structure fast — I build the systems and habits that keep work moving.',
+            es: 'Para equipos que necesitan estructura ya — construyo los sistemas y hábitos que mantienen el trabajo en marcha.',
+            ca: "Per a equips que necessiten estructura ja — construeixo els sistemes i hàbits que mantenen la feina en marxa."
         },
         items: {
-            en: ['Sprint & task tracking', 'Team sync facilitation', 'Communication flow setup', 'Light documentation'],
-            es: ['Seguimiento de sprints y tareas', 'Facilitación de sincronizaciones de equipo', 'Configuración del flujo de comunicación', 'Documentación ligera'],
-            ca: ['Seguiment de sprints i tasques', 'Facilitació de sincronitzacions d\'equip', 'Configuració del flux de comunicació', 'Documentació lleugera']
+            en: ['Task tracking', 'Communication flow', 'Process documentation', 'Team alignment & training'],
+            es: ['Seguimiento de tareas', 'Flujo de comunicación', 'Documentación de procesos', 'Alineación y capacitación del equipo'],
+            ca: ['Seguiment de tasques', 'Flux de comunicació', 'Documentació de processos', "Alineació i formació de l'equip"]
         },
-        cta: { text: { en: 'Explore Support →', es: 'Explorar el Soporte →', ca: 'Explorar el Suport →' }, url: '#contact', external: false }
+        cta: { text: { en: 'Book a Video Call', es: 'Reservar Videollamada', ca: 'Reservar Videotrucada' }, url: 'https://calendly.com/mariprofessional/', external: true }
     },
     service2: {
-        title: { en: 'Startup Operations Management', es: 'Gestión de Operaciones', ca: 'Gestió d\'Operacions' },
+        title: { en: "You're Scaling But Ops Are Breaking", es: 'Estás Creciendo Pero las Operaciones Se Rompen', ca: 'Estàs Creixent Però les Operacions Es Trenquen' },
+        duration: { en: '~4 months', es: '~4 meses', ca: '~4 mesos' },
         description: {
-            en: 'Full-cycle operational support for growing teams. I design workflows, build documentation, and coordinate across people and priorities so your team can focus on building.',
-            es: 'Soporte operativo de ciclo completo para equipos en crecimiento. Diseño flujos de trabajo, creo documentación y coordino entre personas y prioridades para que tu equipo pueda centrarse en construir.',
-            ca: 'Suport operatiu de cicle complet per a equips en creixement. Dissenyo fluxos de treball, creo documentació i coordino entre persones i prioritats perquè el teu equip pugui centrar-se en construir.'
+            en: 'For growing teams where old processes no longer hold — I redesign how work flows and align the team around it.',
+            es: 'Para equipos en crecimiento donde los procesos antiguos ya no funcionan — rediseño cómo fluye el trabajo y alineo al equipo.',
+            ca: "Per a equips en creixement on els processos antics ja no funcionen — redisenyo com flueix la feina i alineo l'equip."
         },
         items: {
-            en: ['Workflow design & documentation', 'Cross-team coordination', 'Process rollout & adoption', 'KPI tracking & reporting'],
-            es: ['Diseño de flujos y documentación', 'Coordinación entre equipos', 'Implementación y adopción de procesos', 'Seguimiento de KPIs e informes'],
-            ca: ['Disseny de fluxos i documentació', 'Coordinació entre equips', 'Implementació i adopció de processos', 'Seguiment de KPIs i informes']
+            en: ['Workflow design', 'Cross-team coordination', 'Process rollout & adoption', 'Reporting & insights'],
+            es: ['Diseño de flujos de trabajo', 'Coordinación entre equipos', 'Implementación y adopción de procesos', 'Informes y análisis'],
+            ca: ['Disseny de fluxos de treball', 'Coordinació entre equips', 'Implementació i adopció de processos', 'Informes i anàlisi']
         },
-        cta: { text: { en: 'Book a Video Call →', es: 'Reservar Videollamada →', ca: 'Reservar Videotrucada →' }, url: 'https://cal.com/mari-reddev', external: true }
+        cta: { text: { en: 'Book a Video Call', es: 'Reservar Videollamada', ca: 'Reservar Videotrucada' }, url: 'https://calendly.com/mariprofessional/', external: true }
     },
     service3: {
-        title: { en: 'Fractional Operations Partner', es: 'Socio Operativo Fraccional', ca: 'Soci Operatiu Fraccional' },
+        title: { en: 'Operations Maintenance & Optimization', es: 'Mantenimiento y Optimización de Operaciones', ca: "Manteniment i Optimització d'Operacions" },
+        duration: { en: 'Ongoing', es: 'Continuo', ca: 'Continu' },
         description: {
-            en: 'An ongoing embedded partner for founders who need operational leadership without a full-time hire. Strategy, structure, and continuity — for the long haul.',
-            es: 'Un socio operativo integrado de forma continua para fundadores que necesitan liderazgo operacional sin contratar a tiempo completo. Estrategia, estructura y continuidad — a largo plazo.',
-            ca: 'Un soci operatiu integrat de forma contínua per a fundadors que necessiten lideratge operacional sense contractar a temps complet. Estratègia, estructura i continuïtat — a llarg termini.'
+            en: 'For teams with systems already in place that need ongoing care — I keep things running, improving, and adapting as you grow.',
+            es: 'Para equipos con sistemas ya implementados que necesitan cuidado continuo — mantengo todo funcionando, mejorando y adaptándose a medida que creces.',
+            ca: 'Per a equips amb sistemes ja implementats que necessiten cura contínua — mantinc tot funcionant, millorant i adaptant-se a mesura que creixes.'
         },
         items: {
-            en: ['Strategic process design', 'Team enablement & alignment', 'Operational leadership', 'Ongoing iteration & improvement'],
-            es: ['Diseño estratégico de procesos', 'Capacitación y alineación del equipo', 'Liderazgo operativo', 'Iteración y mejora continua'],
-            ca: ['Disseny estratègic de processos', 'Capacitació i alineació de l\'equip', 'Lideratge operatiu', 'Iteració i millora contínua']
+            en: ['Keep systems running smoothly', 'Monthly improvements & automation', 'Team training & support', 'Solve problems as they come'],
+            es: ['Mantener los sistemas funcionando sin fricciones', 'Mejoras mensuales y automatización', 'Formación y apoyo al equipo', 'Resolver problemas a medida que surgen'],
+            ca: ["Mantenir els sistemes funcionant sense friccions", 'Millores mensuals i automatització', "Formació i suport a l'equip", 'Resoldre problemes a mesura que sorgeixen']
         },
-        cta: { text: { en: 'Discuss Partnership →', es: 'Hablar de la Colaboración →', ca: 'Parlar de la Col·laboració →' }, url: '#contact', external: false }
+        cta: { text: { en: 'Book a Video Call', es: 'Reservar Videollamada', ca: 'Reservar Videotrucada' }, url: 'https://calendly.com/mariprofessional/', external: true }
     }
 };
 
@@ -383,12 +386,14 @@ function openServiceModal(serviceId) {
     if (!service) return;
 
     const title = typeof service.title === 'object' ? service.title[lang] || service.title.en : service.title;
+    const duration = service.duration ? (service.duration[lang] || service.duration.en) : '';
     const desc = typeof service.description === 'object' ? service.description[lang] || service.description.en : service.description;
     const items = service.items[lang] || service.items.en;
     const ctaText = typeof service.cta.text === 'object' ? service.cta.text[lang] || service.cta.text.en : service.cta.text;
 
     modalBody.innerHTML = `
         <h2>${title}</h2>
+        ${duration ? `<p class="modal-duration">${duration}</p>` : ''}
         <p class="modal-description">${desc}</p>
         <div class="modal-section">
             <h3>${labels.included}</h3>

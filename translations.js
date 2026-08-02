@@ -33,7 +33,6 @@ const translations = {
 
         // Experience
         'experience-title': 'Experience',
-        'experience-description': 'Real coordination challenges — and what it took to keep things moving.',
         'project-fr-desc': 'Embedded product and operations coordination for a web3 fundraising platform. Structured sprint cycles, aligned stakeholders across design, development and marketing, and kept progress moving from roadmap to launch.',
         'project-rb-desc': 'Operational coordination for a blockchain bridge product with distributed development teams. Structured task ownership, maintained clear communication flows, and kept the project on track across the full lifecycle.',
         'tag-web3': 'Web3',
@@ -95,7 +94,6 @@ const translations = {
 
         // Contact
         'contact-title': 'Contact',
-        'contact-description': "Looking for steady operational support? Let's connect.",
         'contact-email': 'Email',
         'contact-phone': 'Phone',
         'contact-location': 'Location',
@@ -103,7 +101,7 @@ const translations = {
         'form-name': 'Name',
         'form-email': 'Email',
         'form-message': 'Message',
-        'form-submit': 'Send →',
+        'form-submit': 'Send',
 
         // Contact form fields
         'form-name-label': 'Name',
@@ -111,11 +109,11 @@ const translations = {
         'form-email-label': 'Email',
         'form-company-label': 'Company / Project',
         'form-company-placeholder': 'What are you building?',
-        'form-support-label': 'What kind of support are you looking for?',
+        'form-support-label': 'Which situation is closest to yours?',
         'form-select-option': 'Select an option',
-        'form-support-op1': 'Operational Coordination Support',
-        'form-support-op2': 'Startup Operations Management',
-        'form-support-op3': 'Fractional Operations Partner',
+        'form-support-op1': 'My team is completely disorganized, I need structure NOW',
+        'form-support-op2': "We're growing fast but ops are breaking",
+        'form-support-op3': "I'm the founder/CEO and I'm drowning in operational work",
         'form-not-sure': 'Not sure yet',
         'form-team-label': 'Team size',
         'form-select-short': 'Select',
@@ -129,24 +127,26 @@ const translations = {
 
         // Footer
         'footer-copy': '© 2026 Marianna Álvarez. All rights reserved.',
-        'footer-meeting': 'Schedule a Meeting →',
+        'footer-meeting': 'Schedule a Meeting',
 
         // Services packages
         'services-title': 'Support Packages',
-        'services-description': "Three ways to work together — pick what fits your team's current stage.",
-        'service1-title': 'Operational Coordination Support',
+        'service1-title': 'Your Team is Disorganized',
+        'service1-duration': '~12 weeks',
         'service1-desc': 'Light-touch coordination for teams that need structure without the overhead. I step in to organize task flow, facilitate syncs, and keep things from slipping.',
         'service1-item1': 'Sprint & task tracking',
         'service1-item2': 'Team sync facilitation',
         'service1-item3': 'Communication flow setup',
         'service1-item4': 'Light documentation',
-        'service2-title': 'Startup Operations Management',
+        'service2-title': "You're Scaling But Ops Are Breaking",
+        'service2-duration': '~4 months',
         'service2-desc': 'Full-cycle operational support for growing teams. I design workflows, build documentation, and coordinate across people and priorities so your team can focus on building.',
         'service2-item1': 'Workflow design & documentation',
         'service2-item2': 'Cross-team coordination',
         'service2-item3': 'Process rollout & adoption',
         'service2-item4': 'KPI tracking & reporting',
-        'service3-title': 'Fractional Operations Partner',
+        'service3-title': 'Operations Maintenance & Optimization',
+        'service3-duration': 'Ongoing',
         'service3-desc': 'An ongoing embedded partner for founders who need operational leadership without a full-time hire. Strategy, structure, and continuity — for the long haul.',
         'service3-item1': 'Strategic process design',
         'service3-item2': 'Team enablement & alignment',
@@ -158,7 +158,6 @@ const translations = {
 
         // Process
         'process-title': 'How We Work Together',
-        'process-description': "Simple and structured. No complicated onboarding — just a clear path from first call to operational clarity.",
         'process-step1-title': 'Discovery Call',
         'process-step1-desc': "We talk about where things stand, what's creating friction, and what structure would actually help your team.",
         'process-step2-title': 'Operational Assessment',
@@ -171,17 +170,16 @@ const translations = {
 
         // Values
         'values-title': 'Values & Approach',
-        'values-description': 'The principles that guide how I work with every team.',
         'value1-title': 'Clarity',
-        'value1-desc': 'Clear communication and documented workflows. No ambiguity — just a shared understanding of what needs to happen and why.',
+        'value1-desc': 'Clear communication and documented workflows.',
         'value2-title': 'Communication',
-        'value2-desc': 'Bridging technical and non-technical. Keeping everyone on the same page, even across distributed teams.',
+        'value2-desc': 'Bridging technical and non-technical.',
         'value3-title': 'Accountability',
         'value3-desc': 'Clear ownership, clear timelines, clear outcomes. I follow through — and I help teams do the same.',
         'value4-title': 'Sustainable Workflows',
-        'value4-desc': "Systems that actually get used. Not just documented and forgotten — built to fit the team's reality.",
-        'value5-title': 'Long-Term Collaboration',
-        'value5-desc': 'I work alongside teams, not just deliver and leave. Good operations grow with the company.',
+        'value4-desc': 'Systems that actually get used.',
+        'value5-title': 'Team Collaboration',
+        'value5-desc': 'Working with your team, not just for it.',
         'value6-title': 'Calm Operations',
         'value6-desc': 'Structure reduces stress. Well-run ops make space for focus, creativity, and growth.',
 
@@ -232,7 +230,6 @@ const translations = {
 
         // Experience
         'experience-title': 'Experiencia',
-        'experience-description': 'Retos reales de coordinación — y lo que hizo falta para mantener las cosas en marcha.',
         'project-fr-desc': 'Coordinación de producto y operaciones para una plataforma web3 de recaudación. Estructuré sprints, alineé stakeholders entre diseño, desarrollo y marketing, y mantuve el avance desde el roadmap hasta el lanzamiento.',
         'project-rb-desc': 'Coordinación operativa para un producto blockchain bridge con equipos de desarrollo distribuidos. Estructuré la responsabilidad de tareas, mantuve flujos de comunicación claros y mantuve el proyecto en curso durante todo el ciclo.',
         'tag-web3': 'Web3',
@@ -294,7 +291,6 @@ const translations = {
 
         // Contact
         'contact-title': 'Contacto',
-        'contact-description': '¿Buscas apoyo operativo constante? Hablemos.',
         'contact-email': 'Correo',
         'contact-phone': 'Teléfono',
         'contact-location': 'Ubicación',
@@ -302,7 +298,7 @@ const translations = {
         'form-name': 'Nombre',
         'form-email': 'Correo',
         'form-message': 'Mensaje',
-        'form-submit': 'Enviar →',
+        'form-submit': 'Enviar',
 
         // Contact form fields
         'form-name-label': 'Nombre',
@@ -310,11 +306,11 @@ const translations = {
         'form-email-label': 'Correo electrónico',
         'form-company-label': 'Empresa / Proyecto',
         'form-company-placeholder': '¿Qué estás construyendo?',
-        'form-support-label': '¿Qué tipo de apoyo buscas?',
+        'form-support-label': '¿Cuál situación se parece más a la tuya?',
         'form-select-option': 'Selecciona una opción',
-        'form-support-op1': 'Apoyo en Coordinación Operativa',
-        'form-support-op2': 'Gestión de Operaciones para Startups',
-        'form-support-op3': 'Socia Operativa Fraccional',
+        'form-support-op1': 'Mi equipo está completamente desorganizado, necesito estructura YA',
+        'form-support-op2': 'Estamos creciendo rápido pero las operaciones se están rompiendo',
+        'form-support-op3': 'Soy fundador/a o CEO y estoy ahogado/a en trabajo operativo',
         'form-not-sure': 'Aún no lo sé',
         'form-team-label': 'Tamaño del equipo',
         'form-select-short': 'Selecciona',
@@ -328,24 +324,26 @@ const translations = {
 
         // Footer
         'footer-copy': '© 2026 Marianna Álvarez. Todos los derechos reservados.',
-        'footer-meeting': 'Agendar Reunión →',
+        'footer-meeting': 'Agendar Reunión',
 
         // Services packages
         'services-title': 'Paquetes de Apoyo',
-        'services-description': 'Tres formas de trabajar juntos — elige la que mejor encaja con la etapa actual de tu equipo.',
-        'service1-title': 'Apoyo en Coordinación Operativa',
+        'service1-title': 'Tu Equipo Está Desorganizado',
+        'service1-duration': '~12 semanas',
         'service1-desc': 'Coordinación ligera para equipos que necesitan estructura sin complejidad. Me encargo de organizar el flujo de tareas, facilitar sincronizaciones y evitar que las cosas se pierdan.',
         'service1-item1': 'Seguimiento de sprints y tareas',
         'service1-item2': 'Facilitación de sincronizaciones',
         'service1-item3': 'Configuración de flujos de comunicación',
         'service1-item4': 'Documentación básica',
-        'service2-title': 'Gestión de Operaciones para Startups',
+        'service2-title': 'Estás Creciendo Pero las Operaciones Se Rompen',
+        'service2-duration': '~4 meses',
         'service2-desc': 'Apoyo operativo completo para equipos en crecimiento. Diseño flujos de trabajo, construyo documentación y coordino personas y prioridades.',
         'service2-item1': 'Diseño de flujos y documentación',
         'service2-item2': 'Coordinación entre equipos',
         'service2-item3': 'Implementación y adopción de procesos',
         'service2-item4': 'Seguimiento de KPIs e informes',
-        'service3-title': 'Socia Operativa Fraccional',
+        'service3-title': 'Mantenimiento y Optimización de Operaciones',
+        'service3-duration': 'Continuo',
         'service3-desc': 'Un apoyo estratégico continuo para fundadores que necesitan liderazgo operativo sin contratar a tiempo completo. Estrategia, estructura y continuidad.',
         'service3-item1': 'Diseño estratégico de procesos',
         'service3-item2': 'Capacitación y alineación del equipo',
@@ -357,7 +355,6 @@ const translations = {
 
         // Process
         'process-title': 'Cómo Trabajamos Juntos',
-        'process-description': 'Simple y estructurado. Sin incorporaciones complicadas — solo un camino claro desde la primera llamada hasta la claridad operativa.',
         'process-step1-title': 'Llamada de Descubrimiento',
         'process-step1-desc': 'Hablamos sobre el estado actual del equipo, qué genera fricción y qué estructura realmente ayudaría.',
         'process-step2-title': 'Evaluación Operativa',
@@ -370,17 +367,16 @@ const translations = {
 
         // Values
         'values-title': 'Valores y Enfoque',
-        'values-description': 'Los principios que guían cómo trabajo con cada equipo.',
         'value1-title': 'Claridad',
-        'value1-desc': 'Comunicación clara y flujos documentados. Sin ambigüedad — solo un entendimiento compartido de qué hay que hacer y por qué.',
+        'value1-desc': 'Comunicación clara y flujos de trabajo documentados.',
         'value2-title': 'Comunicación',
-        'value2-desc': 'Haciendo de puente entre lo técnico y lo no técnico. Manteniendo a todos en la misma página, incluso en equipos distribuidos.',
+        'value2-desc': 'Haciendo de puente entre lo técnico y lo no técnico.',
         'value3-title': 'Responsabilidad',
         'value3-desc': 'Responsabilidades claras, plazos claros, resultados claros. Cumplo — y ayudo a los equipos a hacer lo mismo.',
         'value4-title': 'Flujos Sostenibles',
-        'value4-desc': 'Sistemas que realmente se usan. No solo documentados y olvidados — diseñados para encajar con la realidad del equipo.',
-        'value5-title': 'Colaboración a Largo Plazo',
-        'value5-desc': 'Trabajo junto a los equipos, no solo entrego y me voy. Las buenas operaciones crecen con la empresa.',
+        'value4-desc': 'Sistemas que realmente se usan.',
+        'value5-title': 'Colaboración de Equipo',
+        'value5-desc': 'Trabajo con tu equipo, no solo para él.',
         'value6-title': 'Operaciones con Calma',
         'value6-desc': 'La estructura reduce el estrés. Unas operaciones bien gestionadas hacen espacio para el foco, la creatividad y el crecimiento.',
 
@@ -431,7 +427,6 @@ const translations = {
 
         // Experience
         'experience-title': "Experiència",
-        'experience-description': "Reptes reals de coordinació — i el que va caldre per mantenir les coses en marxa.",
         'project-fr-desc': "Coordinació de producte i operacions per a una plataforma web3 de recaptació. Vaig estructurar sprints, alinear stakeholders entre disseny, desenvolupament i màrqueting, i mantenir l'avenç del roadmap fins al llançament.",
         'project-rb-desc': "Coordinació operativa per a un producte blockchain bridge amb equips de desenvolupament distribuïts. Vaig estructurar la responsabilitat de tasques, mantenir fluxos de comunicació clars i mantenir el projecte en curs durant tot el cicle.",
         'tag-web3': 'Web3',
@@ -493,7 +488,6 @@ const translations = {
 
         // Contact
         'contact-title': 'Contacte',
-        'contact-description': "Busques suport operatiu constant? Parlem.",
         'contact-email': 'Correu',
         'contact-phone': 'Telèfon',
         'contact-location': 'Ubicació',
@@ -501,7 +495,7 @@ const translations = {
         'form-name': 'Nom',
         'form-email': 'Correu',
         'form-message': 'Missatge',
-        'form-submit': 'Enviar →',
+        'form-submit': 'Enviar',
 
         // Contact form fields
         'form-name-label': 'Nom',
@@ -509,11 +503,11 @@ const translations = {
         'form-email-label': 'Correu electrònic',
         'form-company-label': 'Empresa / Projecte',
         'form-company-placeholder': "Què estàs construint?",
-        'form-support-label': 'Quin tipus de suport busques?',
+        'form-support-label': 'Quina situació s\'assembla més a la teva?',
         'form-select-option': 'Selecciona una opció',
-        'form-support-op1': 'Suport en Coordinació Operativa',
-        'form-support-op2': "Gestió d'Operacions per a Startups",
-        'form-support-op3': 'Sòcia Operativa Fraccional',
+        'form-support-op1': 'El meu equip està completament desorganitzat, necessito estructura JA',
+        'form-support-op2': "Estem creixent ràpid però les operacions s'estan trencant",
+        'form-support-op3': 'Sóc fundador/a o CEO i estic ofegat/da en feina operativa',
         'form-not-sure': 'Encara no ho sé',
         'form-team-label': "Mida de l'equip",
         'form-select-short': 'Selecciona',
@@ -527,24 +521,26 @@ const translations = {
 
         // Footer
         'footer-copy': '© 2026 Marianna Álvarez. Tots els drets reservats.',
-        'footer-meeting': 'Agendar Reunió →',
+        'footer-meeting': 'Agendar Reunió',
 
         // Services packages
         'services-title': 'Paquets de Suport',
-        'services-description': "Tres maneres de treballar junts — tria la que millor s'adapta a l'etapa actual del teu equip.",
-        'service1-title': 'Suport en Coordinació Operativa',
+        'service1-title': 'El Teu Equip Està Desorganitzat',
+        'service1-duration': '~12 setmanes',
         'service1-desc': "Coordinació lleugera per a equips que necessiten estructura sense la complexitat. M'encarrego d'organitzar el flux de tasques, facilitar sincronitzacions i evitar que les coses es perdin.",
         'service1-item1': 'Seguiment de sprints i tasques',
         'service1-item2': 'Facilitació de sincronitzacions',
         'service1-item3': 'Configuració de fluxos de comunicació',
         'service1-item4': 'Documentació bàsica',
-        'service2-title': "Gestió d'Operacions per a Startups",
+        'service2-title': 'Estàs Creixent Però les Operacions Es Trenquen',
+        'service2-duration': '~4 mesos',
         'service2-desc': "Suport operatiu complet per a equips en creixement. Dissenyo fluxos de treball, construeixo documentació i coordino persones i prioritats.",
         'service2-item1': 'Disseny de fluxos i documentació',
         'service2-item2': "Coordinació entre equips",
         'service2-item3': "Implementació i adopció de processos",
         'service2-item4': "Seguiment de KPIs i informes",
-        'service3-title': 'Sòcia Operativa Fraccional',
+        'service3-title': "Manteniment i Optimització d'Operacions",
+        'service3-duration': 'Continu',
         'service3-desc': "Un suport estratègic continu per a fundadors que necessiten lideratge operatiu sense contractar a temps complet. Estratègia, estructura i continuïtat.",
         'service3-item1': 'Disseny estratègic de processos',
         'service3-item2': "Capacitació i alineació de l'equip",
@@ -556,7 +552,6 @@ const translations = {
 
         // Process
         'process-title': 'Com Treballem Junts',
-        'process-description': "Simple i estructurat. Sense incorporacions complicades — només un camí clar des de la primera trucada fins a la claredat operativa.",
         'process-step1-title': 'Trucada de Descoberta',
         'process-step1-desc': "Parlem sobre l'estat actual de l'equip, què genera fricció i quina estructura realment ajudaria.",
         'process-step2-title': 'Avaluació Operativa',
@@ -569,17 +564,16 @@ const translations = {
 
         // Values
         'values-title': 'Valors i Enfocament',
-        'values-description': 'Els principis que guien com treballo amb cada equip.',
         'value1-title': 'Claredat',
-        'value1-desc': "Comunicació clara i fluxos documentats. Sense ambigüitat — només un enteniment compartit del que cal fer i per què.",
+        'value1-desc': 'Comunicació clara i fluxos de treball documentats.',
         'value2-title': 'Comunicació',
-        'value2-desc': "Fent de pont entre el tècnic i el no tècnic. Mantenint tothom a la mateixa pàgina, fins i tot en equips distribuïts.",
+        'value2-desc': 'Fent de pont entre el tècnic i el no tècnic.',
         'value3-title': 'Responsabilitat',
         'value3-desc': "Responsabilitats clares, terminis clars, resultats clars. Compleixo — i ajudo els equips a fer el mateix.",
         'value4-title': 'Fluxos Sostenibles',
-        'value4-desc': "Sistemes que realment s'utilitzen. No només documentats i oblidats — dissenyats per encaixar amb la realitat de l'equip.",
-        'value5-title': 'Col·laboració a Llarg Termini',
-        'value5-desc': "Treballo al costat dels equips, no només lliuro i marxo. Les bones operacions creixen amb l'empresa.",
+        'value4-desc': "Sistemes que realment s'utilitzen.",
+        'value5-title': "Col·laboració d'Equip",
+        'value5-desc': "Treballo amb el teu equip, no només per a ell.",
         'value6-title': 'Operacions amb Calma',
         'value6-desc': "L'estructura redueix l'estrès. Unes operacions ben gestionades fan espai per al focus, la creativitat i el creixement.",
 

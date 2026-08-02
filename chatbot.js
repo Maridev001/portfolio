@@ -82,7 +82,7 @@ const chatFlow = {
     contact: {
         bot: "You can reach Marianna here:\n\n📧 mariprofessional@outlook.com\n📱 +34 674-837-224 (WhatsApp)\n💼 LinkedIn: linkedin.com/in/majoalfig\n\nOr book a video call directly — it's the fastest way to get started.",
         options: [
-            { text: "Book a video call →", next: "book" },
+            { text: "Book a video call", next: "book" },
             { text: "← Back", next: "welcome" }
         ]
     },
@@ -90,7 +90,7 @@ const chatFlow = {
     book: {
         bot: "Great! You can pick a time that works for you directly on Marianna's calendar. 📅",
         options: [
-            { text: "Open booking page →", next: "open_cal" },
+            { text: "Open booking page", next: "open_cal" },
             { text: "← Start over", next: "welcome" }
         ]
     }
@@ -138,7 +138,7 @@ function selectOption(opt) {
     messages.scrollTop = messages.scrollHeight;
 
     if (opt.next === 'open_cal') {
-        window.open('https://cal.com/mari-reddev', '_blank');
+        window.open('https://calendly.com/mariprofessional/', '_blank');
         renderStep('welcome');
         return;
     }
