@@ -298,7 +298,7 @@ function openPMIModal() {
 
     modalBody.innerHTML = `
         <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
-            <img src="Membership Badge Download.png" alt="PMI CAPM Badge" style="width:80px; height:80px; border-radius:50%;">
+            <img src="Membership Badge Download.png" alt="PMI CAPM certification badge held by Marianna Álvarez" style="width:80px; height:80px; border-radius:50%;">
             <div>
                 <h2 style="margin:0 0 0.25rem;">${p.title}</h2>
                 <p style="margin:0; color:var(--gray-medium);">${p.subtitle}</p>
